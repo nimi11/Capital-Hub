@@ -3,6 +3,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Navigation Section*/
 .navigation {
   align-items: start;
   display: flex;
@@ -79,11 +80,13 @@ body{
   height: 90px;
 }
 
+/*Intro Section*/
 .intro {
   background-color: white;
   display: flex;
   height: 500px;
   flex-wrap: wrap;
+  margin-bottom: 200px;
 }
 
 .b-loan {
@@ -116,6 +119,7 @@ body{
 .handshake {
   padding-top: 50px;
   flex: 40%;
+  margin-top: 30px;
   
 }
 
@@ -146,4 +150,217 @@ body{
 
 .btn-apply:hover {
   background-color: grey;
+}
+
+/*Data Section*/
+.analytics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(1, 26, 1);
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.analytics-data {
+  text-align: center;
+  line-height: 10px;
+}
+.data-header {
+  font-size: xx-large;
+}
+
+/*Why Choose Us Section*/
+.why {
+  text-align: center;
+  line-height: 18px;
+}
+
+.why-h {
+  font-size: xx-large;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  border: 1px solid rgb(14, 100, 14);
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.why-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.info-header {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/*Our Products Section*/
+.our-products {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.ourproducts {
+  background-color: rgb(1, 26, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products {
+  background-color: white;
+  margin: 20px;
+  margin-top: 40px;
+  width: 300px;
+  height: 250px;
+  display: flexbox;
+  flex-direction: row;
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+#products-header {
+  font-weight: bold;
+  font-size: larger;
+}
+.get-loan {
+  width: 230px;
+  height: 30px;
+  color: white;
+  background-color: rgb(2, 68, 2);
+  border-radius: 5px;
+}
+
+.btn {
+  display: grid;
+  background-color: rgb(1, 26, 1);
+  justify-content: center;
+}
+
+.see-more {
+  width: 280px;
+  height: 30px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: rgb(1, 26, 1);
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/*Our Services Section*/
+.our-services {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.ourservices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services {
+  background-color: rgb(2, 68, 2);
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  height: 320px;
+  border-radius: 5px;
+}
+
+#services-header {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.image {
+  width: 280px;
+  height: 170px;
+}
+
+/*How It Works Section*/
+.how-it-works {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.it-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.works {
+  margin: 10px;
+  padding: 20px;
+  height: 150px;
+  text-align: center;
+}
+
+.works-image {
+  background-color: #e3f144;
+  border-radius: 360px;
+  width: 30px;
+  height: 30px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+/*Loan Calculator Section*/
+.loan-calc {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.loan-calculator {
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+.loan-image {
+  margin-left: 80px;
+}
+.loan-image2 {
+  height: 461px;
+  width: 608px;
+}
+
+.loan-calc2 {
+  margin-left: 80px;
+  width: 300px;
+  height: 280px;
+  border-bottom: outset grey;
+  border-radius: 5px;
+  padding: 20px;
+}
+.text {
+  padding: 3px;
+  border-radius: 5px;
+  width: 280px;
+}
+
+#calculator {
+  margin-top: 50px;
+  background-color: rgb(2, 68, 2);
+  color: white;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.form {
+  line-height: 35px;
 }
