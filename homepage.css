@@ -364,3 +364,72 @@ body{
 .form {
   line-height: 35px;
 }
+.container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 3;
+
+}
+.discuss {
+background-color: #383D27;
+margin:50px;
+color: white;
+padding:50px;
+font-size: 30px;
+font-family:Arial, Helvetica,sans-serif;
+}
+.acc-info{
+margin:70px;
+align-items: center;
+justify-content: center;
+}
+.account, .sign-in{
+align-items:center;
+justify-content: center;
+text-align: center;
+padding:10px;
+font-size: 12px;
+line-height: 0.5;
+margin-bottom: 40px;
+}
+input{
+border-radius:5px;
+padding:2px 120px 2px 2px;
+
+
+}
+.btn{
+background-color: #617804;
+color:white;
+border-radius: 5px;
+padding:5px 90px 5px ;
+border:none;
+text-align: center;
+margin-top:20px;
+
+}
+.contain{
+margin: 50px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.header{
+align-items: center;
+justify-content: center;
+text-align: center;
+font-style: italic;
+font-size: 25px;
+}
+.rem{
+display: flex;
+gap:40px;
+font-size: 15px;
+}
+.icons{
+display: flex;
+gap:20px;
+justify-content: center;
+
+}
