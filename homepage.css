@@ -15,7 +15,7 @@ body{
   right: 0;
   background-color: white;
   border-bottom: 0.2px outset white;
-  
+  z-index: 9; 
 }
 
 .logo {
@@ -106,13 +106,15 @@ body{
   flex: 40%;
   padding: 50px 0px 10px 0px;
   padding-left: 90px;
+  position: relative
+  
 }
 
 .handshake {
   padding-top: 50px;
   flex: 40%;
   margin-top: 30px;
-  
+  position: relative
 }
 
 .btn-apply {
@@ -142,6 +144,36 @@ body{
 
 .btn-apply:hover {
   background-color: grey;
+}
+
+.loan-calc1 {
+  margin-left: 600px;
+  margin-top: -120px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid white;
+  border-bottom: outset white;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+/*.other-calc{
+  display: flex;
+}*/
+
+.loan-input1 {
+  margin-top: 0.2rem;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1rem 0.1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgb(194, 191, 191);
 }
 
 /*Data Section*/
@@ -352,10 +384,10 @@ body{
   border-radius: 5px;
   padding: 20px;
 }
+
 .text {
   width: 70%;
-  border-radius: 50px;
-  margin-left: 10px;
+  margin-left: 2px;
   border: none;
 }
 
@@ -451,6 +483,72 @@ body{
   line-height: normal;
 }
 
+/*Footer Section*/
+.footer-container {
+  background-color: black;
+}
+.types {
+  display: flex;
+  justify-content: center;
+  gap: 500px;
+  padding: 50px;
+  color: white;
+}
+
+.newsletter {
+  margin-top: 0.2rem;
+  width: 300px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgb(194, 191, 191);
+}
+
+.news-text {
+  width: 70%;
+  border-radius: 50px;
+  margin-left: 10px;
+  border: none;
+  color: rgba(84, 84, 84, 0.62);
+}
+
+.submit {
+  background-color: #C5E5C2;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+  color: #1D6363;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-right: 180px;
+}
+
+.social-media {
+  width: 22px;
+  height: 22px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  color: white;
+}
+
+.terms {
+  display: flex;
+  gap: 20px;
+}
 /*Signup and Signin*/
 .container{
 display: flex;
