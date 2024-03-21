@@ -622,14 +622,20 @@ margin-top:20px;
 text-align: center;
 }
 
-/* .password{
+ .password{
   display: inline-block;
   position: relative;
 }
-.password input{
-  padding: 10px 5px;
-  outline:none; 
-}*/
+/* .password input{
+   padding: 10px 5px; 
+} */
+  .pass-icon{
+    position:absolute;
+    top:5px;
+    right:10px;
+    width:15px;
+    cursor:pointer;
+  }
 .contain{
 margin: 50px;
 display: flex;
