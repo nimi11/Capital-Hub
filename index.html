@@ -6,18 +6,16 @@
   <title>Capital Hub</title>
   <link rel="stylesheet" href="homepage.css">
 
-  <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-  <style>
-    @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
-    </style>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,300&display=swap" rel="stylesheet">
                 
 </head>
-<body style="padding-top: 60px;">
+<body style="font-family: 'Satoshi', sans-serif; padding-top: 60px;">
   
   <section class="navigation">
     <div class="logo">
             <a href="#"><img class="logo-img" src="images/Frame 142.jpg" alt="Logo">
             </a>
+            <h1>Capital Hub</h1>
     </div>
 
     <div class="nav">
@@ -25,7 +23,7 @@
             <ul>
                 <li>
                    <a href="">
-                        <span class="title">Products</span>
+                        <span class="title">Home</span>
                     </a>
                 </li>
                 <li>
@@ -62,7 +60,7 @@
 
 <section class="intro">
     <div class="intro-text">
-        <button class="b-loan"><strong>Business loans</strong></button>
+        <button class="b-loan"><strong>Get up to &#8358 5 million loan for your business </strong></button>
         <h1 id="head1">Get fast loan to <br> achieve your<br>business goals? 
         </h1>
         <p>
@@ -79,25 +77,15 @@
     </div>
 
     <div class="loan-calc1">
-        <form class="form" action="">
-            <label for="loan-writeup">Loan Amount</label> <br>
-            <div class="loan-input1"><img src="images/Frame 180.jpg" alt=""><input class="text2" 
-              type="text" placeholder="2,600.00"></div>
-            <br>
-            <div class="other-calc">
-                <div class="calc">
-                    <label>Interest</label>
-                    <div class="loan-input2"><img src="images/Frame 180 (1).jpg" alt=""><input class="text1" type="text" placeholder="10%"></div>
-                </div>
+        <form action="">
+            <label class="label" for="loan amount">
+                LOAN AMOUNT</label><input class="input" type="text" placeholder="NGN"><br>
 
-                <div class="calc">
-                    <label>Duration</label> 
-                    <div class="loan-input2"><img src="images/Frame 180 (2).jpg" alt=""><input class="text1" type="text" placeholder="Annual"></div>
-                </div>
-            </div>
-            <br>
-
-            <button style="margin-top: 2px;"  id="calculator">Calculate</button>
+            <label class="label" for="loan tenor">
+                    LOAN TENOR</label><input class="input" type="text" placeholder="MONTHS"> <br>
+                    
+            <label class="label" for="interest">
+                    INTEREST</label><input class="input" type="text" placeholder="%">
         </form>
     </div>
 </section>
@@ -113,62 +101,24 @@
     </div>
 </section>
 
-<section class="why">
-    <h1 class="why-h">Why Choose Us?</h1>
-    <p>We provide a wide range of loan services to cater for all your <br> business needs</p>
-</section>
-
-<section>
-    <div class="why-us">
-        <div class="why-grid">
-            <div class="icon"><img class="icon-image" src="images/Frame 102.jpg" alt="shield-checkmark"></div>
-            <div class="why-info">
-                <p class="info-header">Flexible Repayment Plan</p>
-                <p>Better manage your business cash flow by <br> adjusting payments to align with your <br>revenue fluctuations.</p>
-            </div>
-        </div>
-        <div class="why-grid">
-            <div class="icon"><img class="icon-image" src="images/Frame 102.jpg" alt="shield-checkmark"></div>
-            <div class="why-info">
-                <p class="info-header">Quick Loan</p>
-                <p>Experience quick and swift loan approvals <br> without delays to meet your business <br>financial goals.</p>
-            </div>
-        </div>
-        <div class="why-grid">
-            <div class="icon"><img class="icon-image" src="images/Frame 102.jpg" alt="shield-checkmark"></div>
-            <div class="why-info">
-                <p class="info-header">Low Interest Rates</p>
-                <p>Secure growth opportunities with our <br> business loans at a low interest rate. Remove <br>the burden of high repayment plans.</p>
-            </div>
-        </div>
-        <div class="why-grid">
-            <div class="icon"><img class="icon-image" src="images/Frame 102.jpg" alt="shield-checkmark"></div>
-            <div class="why-info">
-                <p class="info-header">Tailored Solution</p>
-                <p>Access personalized financial plans to meet <br> your unique business goals, ensuring you  <br>achieve your business goals.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section>
     <div><h1 class="our-products">Our Products</h1></div>
 
     <div class="ourproducts">
-        <div class="products">
-            <img class="products-icon" src="images/Frame 105.jpg" alt="piggybank">
+        <div style="background-color: #F9FAFB;" class="products">
+            <img class="products-icon" src="images/Frame 105 (1).jpg" alt="piggybank">
             <p id="products-header">Startup Loans</p>
             <p>Let's provide capital to your new  <br> business to cover initial costs and launch <br> operations.</p>
             <button class="get-loan">Get Loan</button>
         </div>
-        <div class="products">
-            <img class="products-icon" src="images/Frame 105.jpg" alt="piggybank">
+        <div style="background-color: #FDDD32;" class="products">
+            <img class="products-icon" src="images/Frame 105 (2).jpg" alt="piggybank">
             <p id="products-header">Equipment Financing</p>
             <p>Get the funds you need to purchase or <br> lease equipment necessary for business <br> operations.</p>
-            <button class="get-loan">Get Loan</button>
+            <button style="border: 2px solid #868580" class="get-loan">Get Loan</button>
         </div>
-        <div class="products">
-            <img class="products-icon" src="images/Frame 105.jpg" alt="piggybank">
+        <div style="background-color: #F9FAFB;" class="products">
+            <img class="products-icon" src="images/Frame 105 (3).jpg" alt="piggybank">
             <p id="products-header">Bridge Loans</p>
             <p>Short-term financing to cover gaps in cash  <br> flow or fund immediate needs until longer- <br> term financing is secured.</p>
             <button class="get-loan">Get Loan</button>
@@ -179,28 +129,17 @@
 </section>
     
 <section>
-    <div><h1 class="our-services">Our Services</h1></div>
+    <div><h1 class="our-services">Our Amazing Benefits</h1></div>
 
     <div class="ourservices">
         <div class="services">
-            <img class="image" src="images/small-businesses.jpg" alt="piggybank">
-            <p id="services-header">Small Businesses</p>
-            <p>As a startup, get the finance you need  <br> to cover costs, manage cash flow, <br> expand operations, or purchase <br> inventory or equipment.</p>
+            <img class="benefits-image" src="images/entrepreneurs.jpg" alt="">
         </div>
-        <div class="services">
-            <img class="image" src="images/startuploan.jpg" alt="piggybank">
-            <p id="services-header">Startup Loans</p>
-            <p>Let's help with the capital to fund <br> products development, marketing <br> efforts, hiring, or expansion needs.</p>
-        </div>
-        <div class="services">
-            <img class="image" src="images/entrepreneurs.jpg" alt="piggybank">
-            <p id="services-header">Entrepreneurs</p>
-            <p>Looking to launch new ventures or fund  <br> initial business expenses, or scale your <br> business? Let's help you do that.</p>
-        </div>
-        <div class="services">
-            <img class="image" src="images/micro-businesses.jpg" alt="piggybank">
-            <p id="services-header">Micro Businesses</p>
-            <p>Get funds to grow, acquire new assets,  <br> expand into new markets, or launch your <br> products with our loans product.</p>
+        <div class="benefits">
+            <button class="benefits-button">Receive loan in 72 hours &#8599</button><br>
+            <button class="benefits-button">Receive loan in 72 hours &#8599</button><br>
+            <button class="benefits-button">Receive loan in 72 hours &#8599</button><br>
+            <button class="benefits-button">Receive loan in 72 hours &#8599</button><br>
         </div>
     </div>
 </section>
@@ -235,71 +174,96 @@
 <section>
     <div><h1 class="loan-calc">Loan Calculator</h1></div>
 
-    <div class="loan-calculator">
-        <div class="loan-image">
-            <img class="loan-image2" src="images/startuploan.jpg" alt="piggybank">
-        </div>
-        <div class="loan-calc2">
-            <form class="form" action="">
-                <label for="loan-writeup">Loan Amount</label> <br>
-                <div class="loan-input"><img src="images/Frame 180.jpg" alt=""><input class="text" 
-                  type="text" placeholder="3,600,000.00"></div>
-                <br>
-                
-                <label for="">Interest</label> <br>
-                <div class="loan-input"><img src="images/Frame 180 (1).jpg" alt=""><input class="text" type="text" placeholder="2%"></div>
-                <br>
+    <div class="loan-calculator1">
+        <button>Loan Approval</button>
+    </div>
 
-                <label for="">Duration</label> <br>
-                <div class="loan-input"><img src="images/Frame 180 (2).jpg" alt=""><input class="text" type="text" placeholder="18 months"></div>
-                <br>
-
-                <button id="calculator">Calculate</button>
-            </form>
+    <div class="loan-calculator"> 
+        <div class="calc-writeup">
+            <h1 style="font-size: 46px;">Calculate your loan <br> repayment in 10 seconds</h1>
+            <p style="color: rgb(201, 198, 198);">Use CapitalHub to estimate how <br> much you need to pay monthly, your interest <br> and total payment.</p>
+            <button style="height: 40px; width: 100px; font-weight: 700; background-color: #FDDD32;border-radius: 5px; border: none;">Calculate</button>
         </div>
+
+        <div class="calc-image">
+            <img class="c-image" src="images/fashion-designer.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="loan-calculator2">
+        <button>Loan Approval</button>
     </div>
 </section>
 
 <section>
     <div class="testimonial">
-        <div class="testi-monial"><h1 class="testimonials">Testimonials</h1></div>
+        <div class="testi-monial"><h1 class="testimonials">What our Customers are Saying</h1></div>
 
         <div class="ourtestimonials">
             <div class="testy">
-                <p class="testimony-writeup">With competitive interest rates and  <br> flexible repayment terms, we were able<br> to invest in new equipment and grow our <br> operations without any hassle..</p>
-
                 <div class="testimony"><img class="testimony-image" src="images/Ellipse 12.jpg" alt="piggybank">
                 <p class="reviewers">Mercy Ahmed</p></div>
+
+                <p class="testimony-writeup">With competitive interest rates and  flexible<br>  repayment terms, we were able to invest in<br>  new equipment and grow our operations<br>  without any hassle..</p>
+                <p>15th May 2024</p>
+
+        
             </div>
             <div class="testy">
-                <p class="testimony-writeup">With competitive interest rates and  <br> flexible repayment terms, we were able<br> to invest in new equipment and grow our <br> operations without any hassle..</p>
                 <div class="testimony"><img class="testimony-image"src="images/Ellipse 12.jpg" alt="piggybank">
-                    <p class="reviewers">Emeka Chike</p></div>
+                    <p class="reviewers">Emeka Chike</p>
+                    
+                </div>
+                <p class="testimony-writeup">With competitive interest rates and  flexible<br>  repayment terms, we were able to invest in<br>  new equipment and grow our operations<br>  without any hassle..</p>
+                <p>15th May 2024</p>
+        
             </div>
             <div class="testy">
-                <p class="testimony-writeup">With competitive interest rates and  <br> flexible repayment terms, we were able<br> to invest in new equipment and grow our <br> operations without any hassle..</p>
                 <div class="testimony"><img class="testimony-image"src="images/Ellipse 12.jpg" alt="piggybank">
                     <p class="reviewers">Yinka Davies</p></div>
+                <p class="testimony-writeup">With competitive interest rates and  flexible<br>  repayment terms, we were able to invest in<br>  new equipment and grow our operations<br>  without any hassle..</p>
+                <p>15th May 2024</p>
+                
             </div>
         </div>
     </div>
 </section>
 
+<section>
+    <div>
+        <h1 class="faq">Frequently Asked Questions</h1>
+    </div>
+
+    <div></div>
+</section>
+
 <div class="footer-container">
     <div class="types">
-        <div><h1>Our Services</h1>
-            <p>Startup Loan</p>
-            <p>Bridge Loans</p>
-            <p>Bridge Financing</p>
+        <div><h1>CapitalHub</h1>
+            <p>Our mission is to empower <br> businesses by providing them <br> with the financial resources they <br> need to achieve their goals.</p>
         </div>
         <div>
-            <h1>Follow our newsletter</h1>
-            <div class="newsletter"><input class="news-text"  type="text" placeholder="Your work email"> <button class="submit">Submit</button> </div>
+            <h1>Products</h1>
+            <p>Startup Loan</p>
+            <p>Bridge Finance</p>
+            <p>Equipment Financing</p>
+            <p>Micro Loans</p>
+        </div>
+        <div>
+            <h1>Company</h1>
+            <p>About</p>
+            <p>FAQ</p>
+            <p>Resources</p>
+            <p>Apply for Loan</p> 
+        </div>
+        <div>
+            <p style="margin-top: 30px;">28 Mobos Shola, Lekki Phase 1, <br> Lagos, Nigeria</p>
+            <p style="text-align: end;">support@capitalhub.com</p>
+            <p style="text-align: end;">+234 810 181181</p>
         </div>
     </div>
 
     <div class="socials">
-        <p style="color: white; margin-right: 12px;">Follow us on</p>
         <img class="social-media" src="images/bxl_facebook.jpg" alt="">
         <img class="social-media" src="images/flowbite_linkedin-solid.jpg" alt="">
         <img class="social-media" src="images/mdi_twitter.jpg" alt="">
