@@ -354,7 +354,10 @@ body{
 }
 
 .services {
-  background-color: #E99E0E;
+  background: lightgray 50%;
+  background-repeat: 50% cover no-repeat;
+
+
   margin: 10px;
   padding: 20px;
   color: white;
@@ -381,6 +384,7 @@ body{
 
 .benefits-image {
   width: 500px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
 .benefits-button {
