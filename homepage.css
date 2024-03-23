@@ -1,4 +1,5 @@
 body{
+  font-family: 'Satoshi', sans-serif;
   margin: 0;
 }
 
@@ -632,35 +633,62 @@ body{
   display: flex;
   gap: 20px;
 }
-/*Signup and Signin*/
-
-.signin {
-  display: flex;
-}
+/*Signup Page*/
 .container{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-gap: 3;
-
 }
+
 .discuss {
 background-color: #005100;
-margin:50px;
+width: 580px;
+height: 815px;
 color: white;
-padding:50px;
+padding: 50px;
 font-size: 30px;
 font-family:Arial, Helvetica,sans-serif;
 text-align: center;
-margin-right: 0px;
-}
-.acc-info{
-margin:70px;
-align-items: center;
-justify-content: center;
 }
 
+.acc-info{
+align-items: center;
+justify-content: center;
+padding: 60px;
+}
+
+.headers {
+  font-weight: 700;
+}
+
+.signup-info {
+  display: inline-flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  border-radius: 5px;
+}
+
+.signup-btn {
+  background-color: #E99E0E;
+  color:white;
+  border-radius: 5px;
+  padding: 12px 20px;
+  width: 490px;
+  border: none;
+  text-align: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
 /*Sign In Page*/
+.signin {
+  display: flex;
+}
+
 .account, .sign-in{
 align-items:center;
 justify-content: center;
@@ -680,8 +708,6 @@ margin-bottom: 40px;
   border: 1px solid rgba(0, 0, 0, 0.20);
   border-radius: 5px;
 }
-
-
 
 .btn{
 background-color: #E99E0E;
