@@ -345,50 +345,42 @@ body{
 .our-services {
   font-size: xx-large;
   text-align: center;
+  margin-bottom: 0;
+  background-color: #F5F8FF;
+  padding-top: 20px;
 }
 
 .ourservices {
   display: flex;
   flex-direction: row;
   gap: 250px;
+  background-color: #F5F8FF;
+  padding-top: 20px;
 }
 
 .services {
-  background: lightgray 50%;
-  background-repeat: 50% cover no-repeat;
-
-
-  margin: 10px;
-  padding: 20px;
-  color: white;
-  border-radius: 5px;
-  
-}
-
-#services-header {
-  font-weight: bold;
-  font-size: larger;
-}
-
-.image {
-  width: 280px;
-  height: 170px;
+ /*background-color: #FDDD32; 
+ width: 300px;*/
 }
 
 .benefits {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 90px;
+  margin-left: -500px;
+
 }
 
 .benefits-image {
-  width: 500px;
-  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  width: 1000px;
+  margin-top: 0;
+  mix-blend-mode: multiply;
+  z-index: 1;
 }
 
 .benefits-button {
-  width: 400px;
+  width: 500px;
   height: 60px;
   background-color: #3355FD;
   color: white;
@@ -435,6 +427,8 @@ body{
   gap: 20px;
   padding-bottom: 50px;
   background-color: rgb(235, 234, 234);
+  position: relative;
+  z-index: 0;
 }
 
 .c-image {
@@ -445,16 +439,30 @@ body{
 }
 
 .calc-image {
+  padding-top: 50px;
   flex: 40%;
   margin-top: 30px;
-  position: relative;
-  z-index: 0;
+  
 }
 
 .loan-calculator1 {
   margin-left: 700px;
   margin-bottom: -30px;
-  z-index: 4;
+  z-index: 1;
+}
+
+.loan-calculator2 {
+  /*margin-left: 600px;
+  margin-top: -120px;
+  width: 250px;
+  height: 200px;
+  border: 1px solid white;
+  border-bottom: outset white;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  gap: 10px;
+  z-index: 0;*/
 }
 
 .calc-writeup {
@@ -588,7 +596,7 @@ body{
 
 /*Footer Section*/
 .footer-container {
-  background-color: rgba(115, 115, 115, 0.73);
+  background-color: #E4E6E5;
 }
 
 .types {
@@ -608,8 +616,10 @@ body{
 }
 
 .social-media {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #000000;
 }
 
 .copyright {
@@ -623,6 +633,10 @@ body{
   gap: 20px;
 }
 /*Signup and Signin*/
+
+.signin {
+  display: flex;
+}
 .container{
 display: flex;
 flex-direction: row;
@@ -645,76 +659,95 @@ margin:70px;
 align-items: center;
 justify-content: center;
 }
+
+/*Sign In Page*/
 .account, .sign-in{
 align-items:center;
 justify-content: center;
 text-align: center;
 padding:10px;
-font-size: 12px;
+font-size: 20px;
 line-height: 0.5;
 margin-bottom: 40px;
 }
-input{
-border-radius:5px;
-padding:2px 120px 2px 2px;
 
-
+#loginUser{
+  display: inline-flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  border-radius: 5px;
 }
+
+
+
 .btn{
 background-color: #E99E0E;
 color:white;
 border-radius: 5px;
-padding:5px 100px 5px ;
+padding: 12px 20px;
+width: 400px;
 border:none;
 text-align: center;
 margin-top:20px;
 text-align: center;
 }
 
- .password{
+.password{
   display: inline-block;
   position: relative;
 }
-/* .password input{
-   padding: 10px 5px; 
-} */
-  .pass-icon{
-    position:absolute;
-    top:5px;
-    right:10px;
-    width:15px;
-    cursor:pointer;
-  }
+
+.pass-icon{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    width: 15px;
+    cursor: pointer;
+    border-radius: 80px;
+    background-color: #FAFAFA;
+}
+
 .contain{
-margin: 50px;
 display: flex;
 flex-direction: row;
+align-items: center;
+justify-content: center;
 flex-wrap: wrap;
+width: 750px;
+padding: 50px;
 }
+
 .header{
 align-items: center;
 justify-content: center;
 text-align: center;
-font-style: italic;
-font-size: 25px;
+font-size: 30px;
+font-weight: 700;
 }
+
 .rem{
 display: flex;
-gap:80px;
+gap: 200px;
 font-size: 15px;
 }
+
 .or{
  text-align: center; 
  position: relative;
 }
+
 span{
   background-color: white;
   padding:0 10px;
 }
+
 .or:before{
 content: "";
 display: block;
-width:80px;
+width:150px;
 height:2px;
 background:gray;
 position:absolute;
@@ -722,10 +755,11 @@ left:0%;
 top:50%;
 z-index: -2;
 }
+
 .or:after{
 content: "";
 display: block;
-width:80px;
+width:150px;
 height:2px;
 background:gray;
 position:absolute;
@@ -733,10 +767,16 @@ right:0%;
 top:50%;
 z-index:-2;
 }
+
 .icons{
 display: flex;
-gap:10px;
+gap:18px;
 justify-content: center;
 font-size:1px;
+}
 
+.empty {
+  background-color: #005100;
+  height: 700px;
+  width: 800px;
 }
