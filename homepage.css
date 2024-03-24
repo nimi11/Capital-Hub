@@ -727,9 +727,79 @@ padding: 60px;
   text-align: center;
 }
 
+/*Signup Page2*/
+.container2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+  
+  .discuss2 {
+  background-color: #0062E4;
+  width: 580px;
+  height: 835px;
+  color: white;
+  padding: 50px;
+  font-size: 30px;
+  font-family:Arial, Helvetica,sans-serif;
+  text-align: center;
+  }
+  
+  .acc-info2{
+  padding: 60px;
+  width: 548px;
+  }
+  
+  .account2 {
+    padding: 10px;
+    font-size: 15px;
+    line-height: 0.5;
+    margin-bottom: 40px;
+  }
+  
+  .headers2 {
+    font-weight: 700;
+  }
+  
+  .signup-info2 {
+    display: inline-flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: 1px solid rgba(0, 98, 228, 0.40);
+    border-radius: 5px;
+    background-color: #F0F2FF;
+  }
+  
+  .signup-btn-2 {
+    background-color: #737272;
+    color:white;
+    border-radius: 5px;
+    padding: 12px 20px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup-btn2-2 {
+    background-color: #0062E4;
+    color:white;
+    border-radius: 5px;
+    padding: 12px 20px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 80px;
+    text-align: center;
+  }
 
-/*Sign In Page*/
-.signin {
+  /*Sign In Page*/
+/*.signin {
+
   display: flex;
 }
 
@@ -849,4 +919,18 @@ font-size:1px;
   background-color: #005100;
   height: 700px;
   width: 800px;
+}*/
+
+/*New Sign In Page*/
+.sign-in {
+  background-color: white;
+  width: 400px;
+  height: 300px;
+  margin-left: 50px;
+  
+}
+
+.signin-input {
+  margin-top: 5px; 
+  padding: 8px;
 }
