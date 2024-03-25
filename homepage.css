@@ -989,3 +989,70 @@ padding:15px 40px;
  width: 285px; 
 border-radius: 5px;
 }
+
+
+/*Customer Support Page*/
+.blank {
+  background-color: white;
+  height: 100px;
+}
+
+.writeup {
+  background-color: #3355FD;
+  height: 480px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.support-picture {
+  z-index: 1;
+  margin-top: -600px;
+  margin-left: 150px;
+}
+
+.picture-support {
+  height: 600px;
+}
+
+.support-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #F7F7F7;
+}
+.support-input {
+  display: flex;
+  width: 200px;
+  padding: 15px 568px 14px 28px;
+  align-items: center;
+  font-weight: 700;
+  color: #000;
+  border: none;
+}
+
+.support-input2 {
+  display: flex;
+  width: 790px;
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid #d4e1f1;
+}
+
+.support-btn {
+  background-color: #3355FD;
+  color: white;
+  display: flex;
+  width: 790px;
+  padding: 20.5px 144px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
