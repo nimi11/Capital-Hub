@@ -567,7 +567,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
 }
 
 .testimony {
@@ -618,19 +617,18 @@ body{
   font-size: xx-large;
   text-align: center;
 }
+
 .frequent{
   align-items: center;
    /* text-align: center; */
    display: flex;
    flex-direction: column;
-
+  margin-bottom: 80px;
 }
 .quiz{
   border: 1px solid rgb(194, 191, 191);
   border-radius: 5px;
   margin:5px;
- 
- 
 }
 
  .faq-quiz{
@@ -643,17 +641,13 @@ body{
 
 }
 .faq-quiz:after{
-    content:"\02C5";  
+    content: "\02C5";  
   /* content:"\2228" ;  */
-  margin-left: 10px;
-  font-size: 20px;
+  margin-left: 300px;
+  font-size: 15px;
   position: relative;
-  
- 
-  
-  
- 
 }
+
 .answer{
   display: none;
   overflow: hidden;
