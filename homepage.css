@@ -924,13 +924,51 @@ font-size:1px;
 /*New Sign In Page*/
 .sign-in {
   background-color: white;
-  width: 400px;
+  width: 300px;
   height: 300px;
   margin-left: 50px;
-  
+  margin-top: 200px;
+  margin-bottom: 70px;
+  padding: 30px 30px 30px 100px;
+  border-radius: 10px;
 }
 
 .signin-input {
   margin-top: 5px; 
+  margin-bottom: 8px;
   padding: 8px;
+  background-color: #F0F2FF;
+  border: 1px solid rgba(0, 98, 228, 0.40);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-image {
+  width: 600px;
+  height: 1020px;
+  margin-top: none;
+}
+
+.signin-btn {
+  margin-top: 40px;
+  border-radius: 8px;
+  background: #0062E4;
+  display: flex;
+  width: 190px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+}
+
+.footer-text {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  text-align: center;
+  margin-left: 40px;
 }
