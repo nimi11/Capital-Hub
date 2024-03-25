@@ -368,10 +368,10 @@ body{
   padding-top: 20px;
 }
 
-.services {
+/* .services {
  /*background-color: #FDDD32; 
- width: 300px;*/
-}
+ width: 300px;
+} */
 
 .benefits {
   display: flex;
@@ -620,23 +620,36 @@ body{
 }
 .frequent{
   align-items: center;
-   text-align: center;
+   /* text-align: center; */
    display: flex;
    flex-direction: column;
+
+}
+.quiz{
+  border: 1px solid rgb(194, 191, 191);
+  border-radius: 5px;
+  margin:5px;
+ 
+ 
 }
 
  .faq-quiz{
-  font-size: 18px;
+  font-size: 13px;
   border: none;
   outline: none;
   cursor: pointer;
+  margin-left: 30px;
+  width: 800px;
+
 }
 .faq-quiz:after{
     content:"\02C5";  
   /* content:"\2228" ;  */
-  margin-left: 150px;
+  margin-left: 10px;
   font-size: 20px;
   position: relative;
+  
+ 
   
   
  
@@ -784,10 +797,10 @@ padding: 60px;
   }
   
   .headers2 {
-    font-weight: 700;
+    font-weight: 500;
   }
   
-  .signup-info2 {
+  .signup-info2, .signin-input {
     display: inline-flex;
     padding: 12px 20px;
     justify-content: center;
@@ -822,8 +835,8 @@ padding: 60px;
     margin-left: 80px;
     text-align: center;
   }
-
-  /*Sign In Page*/
+  
+  
 /*.signin {
 
   display: flex;
@@ -948,15 +961,36 @@ font-size:1px;
 }*/
 
 /*New Sign In Page*/
+
+.contain{
+    display:flex;
+  }
+
 .sign-in {
   background-color: white;
   width: 400px;
   height: 300px;
-  margin-left: 50px;
+  margin: 150px 100px;
+  align-items: center;
+  text-align: center;
+  padding: 70px ;
+  border-radius: 30px;
   
 }
-
-.signin-input {
-  margin-top: 5px; 
-  padding: 8px;
+.policy{
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-left: 100px;
+ 
+}
+.btn-sign{
+margin-top: 80px;
+margin-bottom: 100px;
+border:1px solid rgba(0, 98, 228, 0.40);
+background-color: #0062E4;
+color: white;
+padding:15px 40px;
+ width: 285px; 
+border-radius: 5px;
 }
