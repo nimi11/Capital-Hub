@@ -618,7 +618,33 @@ body{
   font-size: xx-large;
   text-align: center;
 }
+.frequent{
+  align-items: center;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
 
+ .faq-quiz{
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.faq-quiz:after{
+    content:"\02C5";  
+  /* content:"\2228" ;  */
+  margin-left: 150px;
+  font-size: 20px;
+  position: relative;
+  
+  
+ 
+}
+.answer{
+  display: none;
+  overflow: hidden;
+}
 
 /*Footer Section*/
 .footer-container {
