@@ -1172,3 +1172,21 @@ padding: 60px;
   margin-top: 20px;
   border: 1px solid rgba(0, 0, 0, 0.20)
 }
+.particulars{
+  text-align: center;
+  background-color: #0062E4;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+}
+.loan-container{
+  /* width:800px; */
+  align-items: center;
+  justify-content: center;
+  margin:100px;
+  border: 1px solid white;
+}
+.personal-info{
+   border: 1px solid rgba(0, 98, 228, 0.80);
+   padding: 5px;
+}
