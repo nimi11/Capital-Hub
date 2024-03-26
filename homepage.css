@@ -978,32 +978,31 @@ padding: 60px;
 
 .sign-in {
   background-color: white;
-  width: 300px;
+  width: 400px;
   height: 300px;
   margin: 120px 10px 120px 100px;
   align-items: center;
   text-align: center;
   padding: 50px 70px 150px ;
   border-radius: 30px;
-  
-  
 }
+
 .policy{
   color: white;
   font-size: 10px;
   text-align: center;
   margin-left: 100px;
- 
 }
+
 .btn-sign{
-margin-top: 80px;
-margin-bottom: 100px;
-border:1px solid rgba(0, 98, 228, 0.40);
-background-color: #0062E4;
-color: white;
-padding:15px 40px;
- width: 285px; 
-border-radius: 5px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  border:1px solid rgba(0, 98, 228, 0.40);
+  background-color: #0062E4;
+  color: white;
+  padding:15px 40px;
+  width: 285px; 
+  border-radius: 5px;
 }
 
 
