@@ -1114,3 +1114,61 @@ padding: 60px;
   margin-top: 40px;
   margin-bottom: 150px;
 }
+
+/*Customer Support2*/
+.customer-header {
+  display: flex;
+  background-color: #F7F7F7;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(142, 152, 168, 0.50);
+}
+
+.live-support {
+  margin-left: 650px;
+  text-align: center;
+  line-height: 5px;
+}
+
+.support-officer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-right: 20px;
+}
+
+.support-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border-right: 1px solid rgba(142, 152, 168, 0.50);
+  background-color: #F7F7F7;
+}
+
+.support-messages {}
+
+.chatroom {}
+
+.search-bar {
+  display: flex;
+}
+
+/*.fas fa-search {
+  height: 55px;
+  width: 55px; 
+  line-height: 55px; 
+  text-align: center;
+  z-index: 1;
+  margin-left: 70px;
+}*/
+
+.support-search {    
+  width: 250px;
+  padding: 5px;
+  font-size: 11pt;
+  border-radius: 18px;
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.20)
+}
