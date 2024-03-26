@@ -692,7 +692,8 @@ body{
   gap: 20px;
 }
 
-/*Signup Page*/
+
+/*Signup Page1*/
 .container{
 display: flex;
 flex-direction: row;
@@ -799,16 +800,6 @@ padding: 60px;
   
   .headers2 {
     font-weight: 700;
-  }
-  .signin-input {
-    display: inline-flex;
-    padding: 12px 20px;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    border: 1px solid rgba(0, 98, 228, 0.40);
-    border-radius: 5px;
-    background-color: #F0F2FF;
   }
   
   .signup-info2 {
@@ -970,6 +961,56 @@ padding: 60px;
     text-align: center;
   }
 
+/* success page */
+.contain-success{
+  background-color:#0062E4 ;
+  border:2px solid rgba(0, 0, 0, 0.20);
+  border-radius: 20px;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.12);
+  width: 600px;
+  height: 400px; 
+  margin: 50px 239px;
+  display: flex;
+  padding: 100px;
+}
+
+.success-image {
+  width: 250px;
+}
+
+.success{
+  width: 350px;
+  text-align: start;
+  margin-top: 90px;
+}
+
+.parag{
+  color: white;
+  font-size: 13px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.see-progress{
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #0062E4;
+  padding: 10px 28px;
+}
+
+.back-home{
+  color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: white;
+  padding: 10px 28px;
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+
 /*New Sign In Page*/
 .contain{
     display:flex;
@@ -1038,22 +1079,25 @@ padding: 60px;
   align-content: center;
   background-color: #F7F7F7;
 }
+
 .support-input {
   display: flex;
   width: 200px;
   padding: 15px 568px 14px 28px;
   align-items: center;
-  font-weight: 700;
+  font-weight: 400;
   color: #000;
   border: none;
 }
 
 .support-input2 {
-  display: flex;
-  width: 790px;
+  width: 770px;
   height: 200px;
   border-radius: 8px;
   border: 1px solid #d4e1f1;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #A4A5A9;
 }
 
 .support-btn {
@@ -1069,53 +1113,4 @@ padding: 60px;
   border: none;
   margin-top: 40px;
   margin-bottom: 150px;
-}
-
-/* success page */
-.contain-success{
-  background-color:#0062E4 ;
-  border:2px solid rgba(0, 0, 0, 0.20);
-  border-radius: 20px;
-  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.12);
-  width: 600px;
-  height: 400px; 
-  margin: 50px 239px;
-  display: flex;
-  padding: 100px;
-}
-
-.success-image {
-  width: 250px;
-}
-
-.success{
-  width: 350px;
-  text-align: start;
-  margin-top: 90px;
-}
-
-.parag{
-  color: white;
-  font-size: 13px;
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-.see-progress{
-  color: white;
-  border: 1px solid white;
-  border-radius: 5px;
-  font-size: 12px;
-  background-color: #0062E4;
-  padding: 10px 28px;
-}
-
-.back-home{
-  color: black;
-  border: 1px solid white;
-  border-radius: 5px;
-  font-size: 12px;
-  background-color: white;
-  padding: 10px 28px;
-  margin-left: 20px;
-  font-weight: 700;
 }
