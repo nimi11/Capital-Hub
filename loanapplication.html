@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Hub</title>
     <link rel="stylesheet" href="homepage.css">
+   
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="loan-container">
@@ -13,24 +16,29 @@
             <h2>Loan Application Form</h2>
             <h2>Capital Hub</h2>
         </div>
-       <p style="font-weight:300; font-size: 16px">Please answer all questions correctly and accurately. Ensure that questions are valid, Incomplete or inaccurate
+       <p style="font-weight:300; font-size: 16px; margin-left: 50px;">Please answer all questions correctly and accurately. Ensure that questions are valid, Incomplete or inaccurate
            application may cause your application to not be<br> approved.
        </p>
       <div class="personal-info">
          <p class="particulars">Personal Information</p>
-         <p>Personal Information</p>
+         <p style="margin-left: 50px;"> <strong>Personal Information</strong></p>
          <div class="title">
-            <p>Title <span>Mr Miss Mrs Ms Others </span>
-            </p>
-           </div>
-         <form class="form-inline">
+            <p style="margin-left: 50px;">Title </p>
+            <div class="titles" style="margin-left: 200px;">
+                <img src="./images/Rectangle 65.jpg" alt=""> Mr</span><span> <img src="./images/Rectangle 65.jpg" alt=""> Miss</span>
+                <span> <img src="./images/Rectangle 65.jpg" alt=""> Mrs</span> <span> <img src="./images/Rectangle 65.jpg" alt=""> Ms</span> 
+                <span> <img src="./images/Rectangle 65.jpg" alt=""> Others</span>
+             </div>
+            
+           </div class= "forms">
+         
             <label for="name">Full Name:</label>
             <input type="text" placeholder="" name="" ><br>
         
-            <label for="dob">Date of Birth:</label>
+            <label >Date of Birth:</label>
             <input type="text" placeholder="" name=""><br>
             
-            <label for="address">Current Address:</label>
+            <label >Current Address:</label>
             <input type="text" placeholder="" name="" ><br>
 
             <label for="name">Phone number:</label>
@@ -125,35 +133,38 @@
 
             <p class="particulars">Bank Statement Upload</p>
 
-            <label for="name">Upload Statement</label>
-            <input   type="text" placeholder="" name=""><br>
-            <p>Drag and drop a file</p>
+            <div class="upload-stat" style="display: inline-flex; margin-left:50px" >
+                <p>Upload Statement</p>
+                <p class="upload" style="margin-left: 380px;">Drag and drop a file</p>         
+            </div>
 
             <p class="particulars">References</p>
 
-            <p>Referee 1</p>
+            <p style="margin-left: 50px;">Referee 1</p>
             <label for="name">Relationship:</label>
             <input type="text" placeholder="" name=""><br>   
 
             <label for="name">Phone Number</label>
             <input type="text" placeholder="" name=""><br>
 
-            <p>Referee 2</p>
+            <p style="margin-left:50px;">Referee 2</p>
             <label for="name">Relationship:</label>
             <input type="text" placeholder="" name=""><br>
 
             <label for="name">Phone Number</label>
             <input type="text" placeholder="" name=""><br>
-            </form>
+        
 
             <p class="particulars">Declaration</p>
-            <p>I certify that all information provided in this loan application form is true and accurate to the best of my knowledge.
-            I understand that providing false information may result in the rejection of my loan application. I authorize the lender
-            to verify the information provided.
+            <p style="margin-left:50px; ">I certify that all information provided in this loan application form is true and accurate to the best of my knowledge.
+            I<br> understand that providing false information may result in the rejection of my loan application. I authorize the lender
+            to <br>verify the information provided.
             </p>
-            
-            <p>signature:</p>
-            <p>Date:</p>
+            <div class="signature">
+                <p style="margin-left:50px;">signature:</p>
+                <p style="margin-left:50px;">Date:</p> 
+            </div>
+           
       </div>
 
     </div>
