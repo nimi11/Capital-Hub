@@ -1170,8 +1170,9 @@ padding: 60px;
   font-size: 11pt;
   border-radius: 18px;
   margin-top: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.20)
+  border: 1px solid rgba(0, 98, 228, 0.80)
 }
+/* Loan applicatin form */
 .particulars{
   text-align: center;
   background-color: #0062E4;
@@ -1180,13 +1181,27 @@ padding: 60px;
   padding: 10px;
 }
 .loan-container{
-  /* width:800px; */
+ /* width: 1440px; */
+ /* height:1870px; */
   align-items: center;
   justify-content: center;
   margin:100px;
-  border: 1px solid white;
+  border: 1px solid  rgba(0, 98, 228, 0.80);;
 }
 .personal-info{
    border: 1px solid rgba(0, 98, 228, 0.80);
-   padding: 5px;
+   /* width: 1364px; */
+   /* height: 1870px; */
+
+}
+.loan-header{
+  background-color: #0062E4;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 631px;
+  padding: 48px 100px 29px 100px;
+  font-weight: 700;
+  object-fit:contain;
 }
