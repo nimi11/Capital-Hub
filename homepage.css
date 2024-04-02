@@ -1251,3 +1251,11 @@ width: 385px;
 padding: 10px 0px 10px 2px; 
 text-align: center;
 }
+
+
+/*Business Dashboard*/
+.bdash-menu {
+  width: 280px;
+  height: 900px;
+  background-color: #243BB1;
+}
