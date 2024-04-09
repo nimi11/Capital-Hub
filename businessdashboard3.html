@@ -10,7 +10,7 @@
 </head>
 <body>
   <div style="display: flex;">
-    <div class="bdash-menu">
+    <div class="bdash-menu" style="height: 1000px;">
       <div style="display: flex; align-items: center;">
         <img style="width: 30px; height: 30px; margin-left: 50px; margin-right: 5px; border-radius: 8px;" src="images/Frame 142 (1).jpg" alt="">
         <p style="font-weight: 700; font-size: 20px; color: white;">Capital Hub</p>
@@ -79,7 +79,7 @@
 
     <div class="bdash-body">
       <div style="height: 50px; width: 1100px; background-color: #FFC700; align-items: center; display: flex;">
-        <div style="width: 280px; margin-left: 30px;"><input style="width: 280px; height: 30px; border-radius: 6px; border: none; background-color: rgba(255, 255, 255, 0.75);" type="text" placeholder="Search"></div>
+        <div style="width: 280px; margin-left: 30px;"><input style="width: 280px; height: 30px; border-radius: 6px; border: none; background-color: rgba(255, 255, 255, 0.75);" type="text" placeholder="Search by application ID, name"></div>
 
         <div style="background-color: rgba(61, 61, 61, 0.70); border-radius: 10px; margin-left: 650px; margin-right: 5px; width: 20px; height: 20px; align-items: center; display: flex; justify-content: center;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 22" fill="none">
@@ -93,55 +93,187 @@
       </div>
 
       <div style="display: flex; margin-top: 25px;">
-        <p style="font-weight: 700; margin-left: 30px;">Overview</p>
-        <p style="font-weight: 500; margin-left: 730px;">Welcome Back, Chika Suru</p>
+        <p style="font-weight: 700; margin-left: 20px;">Application Status</p>
+        <p style="font-weight: 500; margin-left: 650px;">Welcome Back, Chika Suru</p>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-left: 20px; margin-right: 60px;">
-        <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228);">
-          <div style="display: flex; gap: 120px; font-size: 12px; margin-top: 20px; margin-left: 10px;">
-            <p style="font-weight: 700;">Loan Proposal</p>
-            <p style="color: green; font-size: 10px;">-2.5%</p>
+      <div style="margin-left: 20px; margin-top: -28px; font-size: 12px;">
+        <p>You have 2 new applications.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-left: 20px; margin-right: 60px; margin-top: 30px;">
+        <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228); background-color: #3355FD; color: white;">
+          <div style="display: flex; gap: 110px; font-size: 12px; margin-top: 20px; margin-left: 10px; align-items: center;">
+            <p style="font-weight: 500;">Total Applications</p>
+            <div style="background-color: rgba(61, 61, 61, 0.70); border-radius: 10px; width: 20px; height: 20px; align-items: center; display: flex; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 22" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41732 14.6664L15.584 14.6664C18.1153 14.6664 20.1673 16.7184 20.1673 19.2497C20.1673 19.756 19.7569 20.1664 19.2507 20.1664C18.7806 20.1664 18.3931 19.8125 18.3402 19.3566L18.3293 19.0881C18.2488 17.698 17.1357 16.5849 15.7456 16.5044L15.584 16.4997H6.41732C4.89853 16.4997 3.66732 17.7309 3.66732 19.2497C3.66732 19.756 3.25691 20.1664 2.75065 20.1664C2.24439 20.1664 1.83398 19.756 1.83398 19.2497C1.83398 16.785 3.77943 14.7747 6.2185 14.6706L6.41732 14.6664L15.584 14.6664L6.41732 14.6664ZM11.0006 1.83301C14.0381 1.83301 16.5006 4.29544 16.5006 7.33301C16.5006 10.3706 14.0381 12.833 11.0006 12.833C7.96301 12.833 5.50058 10.3706 5.50058 7.33301C5.50058 4.29544 7.96301 1.83301 11.0006 1.83301ZM11.0002 3.66638C8.9752 3.66638 7.33358 5.308 7.33358 7.33305C7.33358 9.35809 8.9752 10.9997 11.0002 10.9997C13.0253 10.9997 14.6669 9.35809 14.6669 7.33305C14.6669 5.308 13.0253 3.66638 11.0002 3.66638Z" fill="white"/>
+              </svg></div>
           </div>
           <div style="display: flex; gap: 170px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
-            <p style="font-weight: 700;">5,000</p>
-            <p style="color: green;">&#8599</p>
+            <p style="font-weight: 700;">10000</p>
           </div>
         </div>
 
-        <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228);">
-          <div style="display: flex; gap: 90px; font-size: 12px; margin-top: 20px; margin-left: 10px;">
-            <p style="font-weight: 700;">Total Disbursement</p>
-            <p style="color: green; font-size: 10px;">-2.5%</p>
+        <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228); background-color: #3355FD; color: white;">
+          <div style="display: flex; gap: 125px; font-size: 12px; margin-top: 20px; margin-left: 10px; align-items: center;">
+            <p style="font-weight: 500;">Total Approved</p>
+            <div style="background-color: rgba(61, 61, 61, 0.70); border-radius: 10px; width: 20px; height: 20px; align-items: center; display: flex; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 22" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41732 14.6664L15.584 14.6664C18.1153 14.6664 20.1673 16.7184 20.1673 19.2497C20.1673 19.756 19.7569 20.1664 19.2507 20.1664C18.7806 20.1664 18.3931 19.8125 18.3402 19.3566L18.3293 19.0881C18.2488 17.698 17.1357 16.5849 15.7456 16.5044L15.584 16.4997H6.41732C4.89853 16.4997 3.66732 17.7309 3.66732 19.2497C3.66732 19.756 3.25691 20.1664 2.75065 20.1664C2.24439 20.1664 1.83398 19.756 1.83398 19.2497C1.83398 16.785 3.77943 14.7747 6.2185 14.6706L6.41732 14.6664L15.584 14.6664L6.41732 14.6664ZM11.0006 1.83301C14.0381 1.83301 16.5006 4.29544 16.5006 7.33301C16.5006 10.3706 14.0381 12.833 11.0006 12.833C7.96301 12.833 5.50058 10.3706 5.50058 7.33301C5.50058 4.29544 7.96301 1.83301 11.0006 1.83301ZM11.0002 3.66638C8.9752 3.66638 7.33358 5.308 7.33358 7.33305C7.33358 9.35809 8.9752 10.9997 11.0002 10.9997C13.0253 10.9997 14.6669 9.35809 14.6669 7.33305C14.6669 5.308 13.0253 3.66638 11.0002 3.66638Z" fill="white"/>
+              </svg></div>
           </div>
           <div style="display: flex; gap: 100px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
-            <p style="font-weight: 700;">₦20,222,000.22</p>
-            <p style="color: green;">&#8599</p>
+            <p style="font-weight: 700;">2000</p>
           </div>
         </div>
 
-        <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228);">
-          <div style="display: flex; gap: 70px; font-size: 12px; margin-top: 20px; margin-left: 10px;">
-            <p style="font-weight: 700;">Total Amount Received</p>
-            <p style="color: green; font-size: 10px;">30%</p>
+        <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228); background-color: #3355FD; color: white;">
+          <div style="display: flex; gap: 130px; font-size: 12px; margin-top: 20px; margin-left: 10px; align-items: center;">
+            <p style="font-weight: 500;">Total Pending</p>
+            <div style="background-color: rgba(61, 61, 61, 0.70); border-radius: 10px; width: 20px; height: 20px; align-items: center; display: flex; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 22" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41732 14.6664L15.584 14.6664C18.1153 14.6664 20.1673 16.7184 20.1673 19.2497C20.1673 19.756 19.7569 20.1664 19.2507 20.1664C18.7806 20.1664 18.3931 19.8125 18.3402 19.3566L18.3293 19.0881C18.2488 17.698 17.1357 16.5849 15.7456 16.5044L15.584 16.4997H6.41732C4.89853 16.4997 3.66732 17.7309 3.66732 19.2497C3.66732 19.756 3.25691 20.1664 2.75065 20.1664C2.24439 20.1664 1.83398 19.756 1.83398 19.2497C1.83398 16.785 3.77943 14.7747 6.2185 14.6706L6.41732 14.6664L15.584 14.6664L6.41732 14.6664ZM11.0006 1.83301C14.0381 1.83301 16.5006 4.29544 16.5006 7.33301C16.5006 10.3706 14.0381 12.833 11.0006 12.833C7.96301 12.833 5.50058 10.3706 5.50058 7.33301C5.50058 4.29544 7.96301 1.83301 11.0006 1.83301ZM11.0002 3.66638C8.9752 3.66638 7.33358 5.308 7.33358 7.33305C7.33358 9.35809 8.9752 10.9997 11.0002 10.9997C13.0253 10.9997 14.6669 9.35809 14.6669 7.33305C14.6669 5.308 13.0253 3.66638 11.0002 3.66638Z" fill="white"/>
+              </svg></div>
           </div>
           <div style="display: flex; gap: 120px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
-            <p style="font-weight: 700;">₦725,000.22</p>
-            <p style="color: green;">&#8599</p>
+            <p style="font-weight: 700;">104</p>
           </div>
         </div>
 
-        <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228);">
-          <div style="display: flex; gap: 120px; font-size: 12px; margin-top: 20px; margin-left: 10px;">
-            <p style="font-weight: 700;">Loan Payment</p>
-            <p style="color: red; font-size: 10px;">-2.5%</p>
+        <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228); background-color: #3355FD; color: white;">
+          <div style="display: flex; gap: 90px; font-size: 12px; margin-top: 20px; margin-left: 10px; align-items: center;">
+            <p style="font-weight: 500;">Declined Applications</p>
+            <div style="background-color: rgba(61, 61, 61, 0.70); border-radius: 10px; width: 20px; height: 20px; align-items: center; display: flex; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 22" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41732 14.6664L15.584 14.6664C18.1153 14.6664 20.1673 16.7184 20.1673 19.2497C20.1673 19.756 19.7569 20.1664 19.2507 20.1664C18.7806 20.1664 18.3931 19.8125 18.3402 19.3566L18.3293 19.0881C18.2488 17.698 17.1357 16.5849 15.7456 16.5044L15.584 16.4997H6.41732C4.89853 16.4997 3.66732 17.7309 3.66732 19.2497C3.66732 19.756 3.25691 20.1664 2.75065 20.1664C2.24439 20.1664 1.83398 19.756 1.83398 19.2497C1.83398 16.785 3.77943 14.7747 6.2185 14.6706L6.41732 14.6664L15.584 14.6664L6.41732 14.6664ZM11.0006 1.83301C14.0381 1.83301 16.5006 4.29544 16.5006 7.33301C16.5006 10.3706 14.0381 12.833 11.0006 12.833C7.96301 12.833 5.50058 10.3706 5.50058 7.33301C5.50058 4.29544 7.96301 1.83301 11.0006 1.83301ZM11.0002 3.66638C8.9752 3.66638 7.33358 5.308 7.33358 7.33305C7.33358 9.35809 8.9752 10.9997 11.0002 10.9997C13.0253 10.9997 14.6669 9.35809 14.6669 7.33305C14.6669 5.308 13.0253 3.66638 11.0002 3.66638Z" fill="white"/>
+              </svg></div>
           </div>
           <div style="display: flex; gap: 120px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
-            <p style="font-weight: 700;">₦252,000.22</p>
-            <p style="color: red;">&#8600</p>
+            <p style="font-weight: 700;">54</p>
           </div>
         </div>
       </div>
+
+      <div style="width: 1050px; border: 1px solid black; margin-top: 50px; margin-left: 20px; border-radius: 5px; margin-bottom: 30px;">
+        <div style="display: flex; border-bottom: 1px solid black; gap: 850px; align-items: center;">
+          <p style="margin-left: 10px;">Date: Aug. 01, 2024</p>
+          <img style="height: 15px;" src="images/Icon.png" alt="">
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; font-weight: 700;font-size: 14.5px;">
+          <p style="margin-left: 10px;">Customer</p>
+          <p>Reference</p>
+          <p>Application Date</p>
+          <p>Loan Product</p>
+          <p>Loan Amount</p>
+          <p>Status</p>
+          <p>Action</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px; align-items: center;">
+          <p style="margin-left: 10px;">Ibrahim Moses</p>
+          <p style="margin-left: -23px;">#234567ba</p>
+          <p style="margin-left: -5px;">15/08/2024</p>
+          <p style="margin-left: 40px;">Bridge Loan</p>
+          <p style="margin-left: 15px;">₦200,000.00</p>
+          <p style="background-color: #EBEEFF; color: #008000;padding: 4px;">Approved</p>
+          <p style="margin-left: -5px; font-weight: 700; ">&#8942</p>
+        </div>
+
+        <div style="display: flex; gap: 70px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px; align-items: center;">
+          <p style="margin-left: 10px;">Eze Kanu</p>
+          <p style="margin-left: 20px;">#234566ba</p>
+          <p style="margin-left: 5px;">14/08/2024</p>
+          <p style="margin-left: 50px;">Agro Loan</p>
+          <p style="margin-left: 33px;">₦200,000.00</p>
+          <p style="margin-left: 10px; background-color: #EBEEFF; color: #008000; padding: 4px;">Approved</p>
+          <p style="margin-left: 5px; font-weight: 700;">&#8942</p>
+        </div>
+
+        <div style="display: flex; gap: 70px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px; align-items: center;">
+          <p style="margin-left: 10px;">Moye Yinka</p>
+          <p style="margin-left: 5px;">#234565ba</p>
+          <p style="margin-left: 6px;">13/08/2024</p>
+          <p style="margin-left: 50px;">Bridge Loan</p>
+          <p style="margin-left: 25px;">₦200,000.00</p>
+          <p style="margin-left: 10px; background-color: #EBEEFF; color: red; padding: 4px;">Declined</p>
+          <p style="margin-left: 10px; font-weight: 700;">&#8942</p>
+        </div>
+
+        <div style="display: flex; gap: 70px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px; align-items: center;">
+          <p style="margin-left: 10px;">Bisi Adeyemi</p>
+          <p style="margin-left: -2px;">#234564ba</p>
+          <p style="margin-left: 5px;">12/08/2024</p>
+          <p style="margin-left: 50px;">Equipment Financing</p>
+          <p style="margin-left: -30px;">₦200,000.00</p>
+          <p style="margin-left: 10px; background-color: #EBEEFF; color: #FFD417; padding: 4px;">In Review</p>
+          <p style="margin-left: 5px; font-weight: 700;">&#8942</p>
+        </div>
+
+        <div style="display: flex; gap: 70px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px; align-items: center;">
+          <p style="margin-left: 10px;">Chinwe Igwe</p>
+          <p style="margin-left: -5px;">#234563ba</p>
+          <p style="margin-left: 8px;">11/08/2024</p>
+          <p style="margin-left: 52px;">Startup Loan</p>
+          <p style="margin-left: 22px;">₦200,000.00</p>
+          <p style="margin-left: 10px; background-color: #EBEEFF; color: red; padding: 4px;">Declined</p>
+          <p style="margin-left: 10px; font-weight: 700;">&#8942</p>
+        </div>
+
+        <div style="display: flex; gap: 70px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px; align-items: center;">
+          <p style="margin-left: 10px;">Adidat Lekan</p>
+          <p style="margin-left: -5px;">#234562ba</p>
+          <p style="margin-left: 8px;">10/08/2024</p>
+          <p style="margin-left: 48px;">Unigrow Loan</p>
+          <p style="margin-left: 15px;">₦200,000.00</p>
+          <p style="margin-left: 10px; background-color: #EBEEFF; color: #008000; padding: 4px;">Approved</p>
+          <p style="margin-left: 5px; font-weight: 700;">&#8942</p>
+        </div>
+
+        <div style="display: flex; gap: 70px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px; align-items: center;">
+          <p style="margin-left: 10px;">Ruth Samuel</p>
+          <p style="margin-left: -3px;">#234561ba</p>
+          <p style="margin-left: 12px;">09/08/2024</p>
+          <p style="margin-left: 45px;">Entrepreneur Loan</p>
+          <p style="margin-left: -15px;">₦200,000.00</p>
+          <p style="margin-left: 10px; background-color: #EBEEFF; color: #008000; padding: 4px;">Approved</p>
+          <p style="margin-left: 5px; font-weight: 700;">&#8942</p>
+        </div>
+
+        <div style="display: flex; gap: 70px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px; align-items: center;">
+          <p style="margin-left: 10px;">Elizabeth Abel</p>
+          <p style="margin-left: -12px;">#234560ba</p>
+          <p style="margin-left: 8px;">08/08/2024</p>
+          <p style="margin-left: 45px;">Bridge Loan</p>
+          <p style="margin-left: 25px;">₦200,000.00</p>
+          <p style="margin-left: 10px; background-color: #EBEEFF; color: #008000; padding: 4px;">Approved</p>
+          <p style="margin-left: 5px; font-weight: 700;">&#8942</p>
+        </div>
+
+        <div style="display: flex; gap: 70px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px; align-items: center;">
+          <p style="margin-left: 10px;">John Bello</p>
+          <p style="margin-left: 8px;">#234559ba</p>
+          <p style="margin-left: 10px;">07/08/2024</p>
+          <p style="margin-left: 50px;">Bridge Loan</p>
+          <p style="margin-left: 25px;">₦200,000.00</p>
+          <p style="margin-left: 10px; background-color: #EBEEFF; color: #008000; padding: 4px;">Approved</p>
+          <p style="margin-left: 5px; font-weight: 700;">&#8942</p>
+        </div>
+
+        <div style="display: flex; gap: 15px; align-items: center; font-size: 12px;">
+          <p style="margin-left: 700px; font-weight: 500;">&#x02C2</p>
+          <p style="background-color: #FFD417; padding: 2px 4px;">1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          <p>&#x2C3</p>
+          <p style="margin-left: 120px; font-weight: 700;">Next</p>
+          <p style="font-weight: 700;">&#8594</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </body>

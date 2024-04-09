@@ -170,7 +170,7 @@ body{
   border-radius: 5px;
   padding: 6px 20px;
   width: 120px;
-  border:  1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(0, 0, 0, 0.16);
   margin-left: 10px;
 }
 
@@ -182,11 +182,11 @@ body{
   line-height: normal;
 }
 
-.input {
+/*.input {
   width: 30px;
   height: 20px;
   margin-left: 20px;
-}
+}*/
 
 
 
@@ -1014,14 +1014,15 @@ padding: 60px;
 
 /*New Sign In Page*/
 .contain{
-    display:flex;
+    display: flex;
+    height: 820px;
   }
 
 .sign-in {
   background-color: white;
   width: 400px;
   height: 300px;
-  margin: 120px 10px 120px 100px;
+  margin: 140px 60px 80px 53px;
   align-items: center;
   text-align: center;
   padding: 50px 70px 150px ;
@@ -1032,7 +1033,7 @@ padding: 60px;
   color: white;
   font-size: 10px;
   text-align: center;
-  margin-left: 100px;
+  margin-left: 5px;
 }
 
 .btn-sign{
@@ -1193,11 +1194,11 @@ padding: 60px;
   padding: 10px;
 }
 .loan-container{
- font-family: "Satoshi Variable";;
+  font-family: "Satoshi Variable";
   align-items: center;
   justify-content: center;
-  margin:100px;
-  border: 1px solid  rgba(0, 98, 228, 0.80);;
+  margin: 100px;
+  border: 1px solid rgba(0, 98, 228, 0.80);
 }
 .personal-info{
    border:  3px solid #0062E4;
@@ -1211,26 +1212,29 @@ padding: 60px;
   display: inline-flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 631px;
+  gap: 560px;
   padding: 48px 100px 29px 100px;
   font-weight: 700;
-  object-fit:contain;
+  object-fit: contain;
+  width: 937px;
 }
- label{
+
+ .loanapp-label{
    margin-left: 50px;
    color: #252525;
    font-weight: 500;
    display: inline-flex;
-    width: 500px; 
-  
+   width: 500px; 
  } 
- input{
-   display: inline-flex;
- width: 500px;
+
+ .loanapp-input{
+  display: inline-flex;
+  width: 500px;
   padding: 10px 0px 10px 2px; 
- gap: 10px;   
- border: 1px solid rgba(0, 98, 228, 0.80);
+  gap: 10px;   
+  border: 1px solid rgba(0, 98, 228, 0.80);
  }
+
  .signature :after{
    content: ""; 
    display: block;
@@ -1241,6 +1245,7 @@ padding: 60px;
   height: 3px;
   width: 385px;
 }
+
 .upload{
 border-radius: 2px;
 border: 1px dashed #0062E4;
@@ -1257,5 +1262,5 @@ text-align: center;
 .bdash-menu {
   width: 280px;
   height: 900px;
-  background-color: #243BB1;
+  background-color: #3355FD;
 }
