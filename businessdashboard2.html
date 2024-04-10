@@ -10,7 +10,7 @@
 </head>
 <body>
   <div style="display: flex;">
-    <div class="bdash-menu">
+    <div class="bdash-menu" style="height: 950px;">
       <div style="display: flex; align-items: center;">
         <img style="width: 30px; height: 30px; margin-left: 50px; margin-right: 5px; border-radius: 8px;" src="images/Frame 142 (1).jpg" alt="">
         <p style="font-weight: 700; font-size: 20px; color: white;">Capital Hub</p>
@@ -79,7 +79,7 @@
 
     <div class="bdash-body">
       <div style="height: 50px; width: 1100px; background-color: #FFC700; align-items: center; display: flex;">
-        <div style="width: 280px; margin-left: 30px;"><input style="width: 280px; height: 30px; border-radius: 6px; border: none; background-color: rgba(255, 255, 255, 0.75);" type="text" placeholder="Search"></div>
+        <div style="width: 280px; margin-left: 30px;"><input style="width: 280px; height: 30px; border-radius: 6px; border: none; background-color: rgba(255, 255, 255, 0.75);" type="text" placeholder="Search by application ID, name"></div>
 
         <div style="background-color: rgba(61, 61, 61, 0.70); border-radius: 10px; margin-left: 650px; margin-right: 5px; width: 20px; height: 20px; align-items: center; display: flex; justify-content: center;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 22" fill="none">
@@ -93,41 +93,45 @@
       </div>
 
       <div style="display: flex; margin-top: 25px;">
-        <p style="font-weight: 700; margin-left: 30px;">Overview</p>
-        <p style="font-weight: 500; margin-left: 730px;">Welcome Back, Chika Suru</p>
+        <p style="font-weight: 700; margin-left: 20px;">Application Status</p>
+        <p style="font-weight: 500; margin-left: 650px;">Welcome Back, Chika Suru</p>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-left: 20px; margin-right: 60px;">
+      <div style="margin-left: 20px; margin-top: -28px; font-size: 12px;">
+        <p>A complete overview of loan status</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-left: 20px; margin-right: 60px; margin-top: 20px;">
         <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228);">
           <div style="display: flex; gap: 120px; font-size: 12px; margin-top: 20px; margin-left: 10px;">
             <p style="font-weight: 700;">Loan Proposal</p>
-            <p style="color: green; font-size: 10px;">-2.5%</p>
+            <p style="color: #008000; font-size: 10px;">+2.5%</p>
           </div>
-          <div style="display: flex; gap: 170px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
-            <p style="font-weight: 700;">5,000</p>
-            <p style="color: green;">&#8599</p>
+          <div style="display: flex; gap: 155px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
+            <p style="font-weight: 700;">2,000</p>
+            <p style="color: #008000;">&#8599</p>
           </div>
         </div>
 
         <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228);">
           <div style="display: flex; gap: 90px; font-size: 12px; margin-top: 20px; margin-left: 10px;">
             <p style="font-weight: 700;">Total Disbursement</p>
-            <p style="color: green; font-size: 10px;">-2.5%</p>
+            <p style="color: #008000; font-size: 10px;">+2.5%</p>
           </div>
-          <div style="display: flex; gap: 100px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
+          <div style="display: flex; gap: 80px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
             <p style="font-weight: 700;">₦20,222,000.22</p>
-            <p style="color: green;">&#8599</p>
+            <p style="color: #008000;">&#8599</p>
           </div>
         </div>
 
         <div style="border-radius: 5px; box-shadow: 2px 1px 3px 2px rgb(233, 228, 228);">
           <div style="display: flex; gap: 70px; font-size: 12px; margin-top: 20px; margin-left: 10px;">
             <p style="font-weight: 700;">Total Amount Received</p>
-            <p style="color: green; font-size: 10px;">30%</p>
+            <p style="color: #008000; font-size: 10px;">at 3.0%</p>
           </div>
-          <div style="display: flex; gap: 120px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
+          <div style="display: flex; gap: 100px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
             <p style="font-weight: 700;">₦725,000.22</p>
-            <p style="color: green;">&#8599</p>
+            <p style="color: #008000;">&#8599</p>
           </div>
         </div>
 
@@ -136,13 +140,135 @@
             <p style="font-weight: 700;">Loan Payment</p>
             <p style="color: red; font-size: 10px;">-2.5%</p>
           </div>
-          <div style="display: flex; gap: 120px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
+          <div style="display: flex; gap: 110px; font-size: 16px; margin-top: -14px; margin-left: 10px;">
             <p style="font-weight: 700;">₦252,000.22</p>
             <p style="color: red;">&#8600</p>
           </div>
         </div>
       </div>
+
+      <div style="width: 1050px; border: 1px solid black; margin-top: 50px; margin-left: 20px; border-radius: 5px; margin-bottom: 30px;">
+        <div style="display: flex; border-bottom: 1px solid black; gap: 850px; align-items: center;">
+          <p style="margin-left: 10px;">Date: Aug. 01, 2024</p>
+          <img style="height: 15px;" src="images/Icon.png" alt="">
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; font-weight: 700;font-size: 14.5px;">
+          <p style="margin-left: 10px;">Customer</p>
+          <p>Applicant ID</p>
+          <p>Loan Product</p>
+          <p>Principal</p>
+          <p>Interest</p>
+          <p>Amount Repaid</p>
+          <p>Status</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px;">
+          <p style="margin-left: 10px;">Ibrahim Moses</p>
+          <p style="margin-left: -28px;">AE/23/2024/01</p>
+          <p style="margin-left: -5px;"> Bridge Loan</p>
+          <p>₦200,000.00</p>
+          <p style="margin-left: -15px;">₦27,222.22</p>
+          <p style="margin-left: -15px;">₦217,777.78</p>
+          <p style="margin-left: 25px; background-color: #EBEEFF; color: #008000; padding: 2px; border-radius: 3px;">Active</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px;">
+          <p style="margin-left: 10px;">Eze Kanu</p>
+          <p style="margin-left: 5px;">AE/23/2024/01</p>
+          <p style="margin-left: -8px;"> Agro Loan</p>
+          <p style="margin-left: 12px;">₦200,000.00</p>
+          <p style="margin-left: -10px;">₦0</p>
+          <p style="margin-left: 30px;">₦0</p>
+          <p style="margin-left: 50px; background-color: #EBEEFF; color: #FFD417; padding: 2px; border-radius: 3px;">Awaiting Approval</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px;">
+          <p style="margin-left: 10px;">Eze Kanu</p>
+          <p style="margin-left: 5px;">AE/23/2024/01</p>
+          <p style="margin-left: -8px;"> Agro Loan</p>
+          <p style="margin-left: 12px;">₦200,000.00</p>
+          <p style="margin-left: -10px;">₦0</p>
+          <p style="margin-left: 33px;">₦0</p>
+          <p style="margin-left: 80px; background-color: #EBEEFF; color: green; padding: 2px; border-radius: 3px;">Active</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px;">
+          <p style="margin-left: 10px;">Eze Kanu</p>
+          <p style="margin-left: 5px;">AE/23/2024/01</p>
+          <p style="margin-left: -8px;"> Agro Loan</p>
+          <p style="margin-left: 12px;">₦200,000.00</p>
+          <p style="margin-left: -10px;">₦0</p>
+          <p style="margin-left: 35px;">₦0</p>
+          <p style="margin-left: 50px;background-color: #EBEEFF; color: #FFD417; padding: 2px; border-radius: 3px;">Awaiting Approval</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px;">
+          <p style="margin-left: 10px;">Eze Kanu</p>
+          <p style="margin-left: 5px;">AE/23/2024/01</p>
+          <p style="margin-left: -8px;"> Agro Loan</p>
+          <p style="margin-left: 12px;">₦200,000.00</p>
+          <p style="margin-left: -8px;">₦0</p>
+          <p style="margin-left: 33px;">₦0</p>
+          <p style="margin-left: 80px; background-color: #EBEEFF; color: green; padding: 2px; border-radius: 3px;">Active</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px;">
+          <p style="margin-left: 10px;">Eze Kanu</p>
+          <p style="margin-left: 5px;">AE/23/2024/01</p>
+          <p style="margin-left: -8px;"> Agro Loan</p>
+          <p style="margin-left: 12px;">₦200,000.00</p>
+          <p style="margin-left: -8px;">₦0</p>
+          <p style="margin-left: 35px;">₦0</p>
+          <p style="margin-left: 48px; background-color: #EBEEFF; color: #FFD417; padding: 2px; border-radius: 3px;">Awaiting Approval</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px;">
+          <p style="margin-left: 10px;">Eze Kanu</p>
+          <p style="margin-left: 5px;">AE/23/2024/01</p>
+          <p style="margin-left: -8px;"> Agro Loan</p>
+          <p style="margin-left: 14px;">₦200,000.00</p>
+          <p style="margin-left: -10px;">₦0</p>
+          <p style="margin-left: 35px;">₦0</p>
+          <p style="margin-left: 50px; background-color: #EBEEFF; color: #FFD417; padding: 2px; border-radius: 3px;">Awaiting Approval</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px;">
+          <p style="margin-left: 10px;">Eze Kanu</p>
+          <p style="margin-left: 5px;">AE/23/2024/01</p>
+          <p style="margin-left: -8px;"> Agro Loan</p>
+          <p style="margin-left: 12px;">₦200,000.00</p>
+          <p style="margin-left: -10px;">₦0</p>
+          <p style="margin-left: 40px;">₦0</p>
+          <p style="margin-left: 70px; background-color: #EBEEFF; color: red; padding: 2px; border-radius: 3px;">Rejected</p>
+        </div>
+
+        <div style="display: flex; gap: 80px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 14px;">
+          <p style="margin-left: 10px;">Eze Kanu</p>
+          <p style="margin-left: 5px;">AE/23/2024/01</p>
+          <p style="margin-left: -8px;"> Agro Loan</p>
+          <p style="margin-left: 12px;">₦200,000.00</p>
+          <p style="margin-left: -10px;">₦0</p>
+          <p style="margin-left: 40px;">₦0</p>
+          <p style="margin-left: 73px; background-color: #EBEEFF; color: red; padding: 2px; border-radius: 3px;">Rejected</p>
+        </div>
+
+        <div style="display: flex; gap: 15px; align-items: center; font-size: 12px;">
+          <p style="margin-left: 700px; font-weight: 500;">&#x02C2</p>
+          <p style="background-color: #FFD417; padding: 2px 4px;">1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          <p>&#x2C3</p>
+          <p style="margin-left: 120px; font-weight: 700;">Next</p>
+          <p style="font-weight: 700;">&#8594</p>
+        </div>
+        
+      </div>
+
     </div>
   </div>
+  
 </body>
 </html>
