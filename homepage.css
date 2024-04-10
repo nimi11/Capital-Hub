@@ -1212,16 +1212,10 @@ padding: 60px;
   display: inline-flex;
   justify-content: center;
   align-items: flex-start;
-<<<<<<< HEAD
   gap: 631px;
   width: 1040px;
-=======
-  gap: 560px;
->>>>>>> bc033a787fe80e0a932237725b0a1584b3f8a7be
   padding: 48px 100px 29px 100px;
   font-weight: 700;
-  object-fit: contain;
-  width: 937px;
 }
 
  .loanapp-label{
@@ -1267,23 +1261,23 @@ text-align: center;
 .bdash-menu {
   width: 280px;
   height: 900px;
-<<<<<<< HEAD
   background-color: #243BB1;
 }
 
 /* User Dashboard */
 .analytic{
   margin-left: 40px;
-
+  margin-top: 30px;
 }
 .udash-menu {
   width: 280px;
   height: 1078px;
-  background-color: #243BB1;
+  background-color: var(--Foundation-Blue-B300, #3355FD);
+  height: 1620px;
 }
 .btn-review{
   font-weight: 500; 
-  background-color: #FD7101; 
+  background-color: #008000;; 
   border-radius: 6px;
   border: none;
   padding: 8px 15px 7px 15px;
@@ -1291,12 +1285,12 @@ text-align: center;
 }
 .btn-info{
   font-weight: 500; 
-  background-color:#EAEBEF;
+  background-color: #EAEBEF;
   padding: 8px 15px 7px 15px;
   border-radius: 6px; 
    border: none;
    top:12px;
-
+  
 }
 .udash input{
   padding: 9px 139px 9px 12px;
@@ -1309,6 +1303,8 @@ background: #FFF;
 .buttons{
   display: inline-flex;
   float: right;
+  gap:20px;
+  margin-top: 0px;
 }
 .ellipse{
 width: 20px;
