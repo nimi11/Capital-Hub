@@ -1212,6 +1212,7 @@ padding: 60px;
   justify-content: center;
   align-items: flex-start;
   gap: 631px;
+  width: 1040px;
   padding: 48px 100px 29px 100px;
   font-weight: 700;
   object-fit:contain;
@@ -1258,4 +1259,74 @@ text-align: center;
   width: 280px;
   height: 900px;
   background-color: #243BB1;
+}
+
+/* User Dashboard */
+.analytic{
+  margin-left: 40px;
+
+}
+.udash-menu {
+  width: 280px;
+  height: 1078px;
+  background-color: #243BB1;
+}
+.btn-review{
+  font-weight: 500; 
+  background-color: #FD7101; 
+  border-radius: 6px;
+  border: none;
+  padding: 8px 15px 7px 15px;
+  top:12px;
+}
+.btn-info{
+  font-weight: 500; 
+  background-color:#EAEBEF;
+  padding: 8px 15px 7px 15px;
+  border-radius: 6px; 
+   border: none;
+   top:12px;
+
+}
+.udash input{
+  padding: 9px 139px 9px 12px;
+  align-items: center;
+  width: 221px;
+  border-radius: 6px;
+  border: none;
+background: #FFF;
+}
+.buttons{
+  display: inline-flex;
+  float: right;
+}
+.ellipse{
+width: 20px;
+}
+/* .ellipse:after{
+  content: ""; 
+   display: block;
+  margin-left: 45px; 
+  font-size: 15px;
+  position: absolute;
+  background: #707070;
+  height: 3px;
+  width: 385px;
+  top:250px;
+color:#FDDD32;
+}  */
+
+.cards{
+display:grid; 
+grid-template-columns: 1fr 1fr 1fr 1fr; 
+gap: 10px; 
+margin-left: 20px; 
+margin-right: 60px;
+ margin-top: 30px
+}
+.card{
+ border-radius: 5px;
+  box-shadow: 2px 1px 3px 2px rgb(233, 228, 228);
+   background-color: #3355FD; 
+   color: white;
 }
