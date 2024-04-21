@@ -84,8 +84,8 @@ body{
   border: none;
 }
 .logo-img {
-  margin: 30px 15px 15px 80px;
-  width: 40px;
+  margin: 30px 15px 15px 60px;
+  width: 170px;
   height: 40px;
 }
 
@@ -778,7 +778,6 @@ padding: 60px;
 .container2{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   background-color: #F7F7F7;
   }
 
@@ -870,7 +869,6 @@ padding: 60px;
 .container3{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   background-color: #F7F7F7;
   }
 
@@ -880,7 +878,7 @@ padding: 60px;
   
   .discuss3{
   background-color: #0062E4;
-  width: 580px;
+  width: 570px;
   height: 850px;
   color: white;
   padding: 50px;
@@ -1061,7 +1059,7 @@ padding: 60px;
 
 /*Customer Support Page*/
 .blank {
-  background-color: white;
+  background-color: #F7F7F7;
   height: 100px;
 }
 
@@ -1137,8 +1135,7 @@ padding: 60px;
 }
 
 .live-support {
-  margin-left: 650px;
-  text-align: center;
+  margin-left: -820px;
   line-height: 5px;
 }
 
@@ -1147,7 +1144,7 @@ padding: 60px;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-right: 20px;
+  margin-left: 125px;
 }
 
 .support-body {
@@ -1224,7 +1221,7 @@ padding: 60px;
   justify-content: center;
   align-items: flex-start;
   gap: 631px;
-  width: 1040px;
+  width: 937px;
   padding: 48px 100px 29px 100px;
   font-weight: 700;
 }
@@ -1350,7 +1347,7 @@ margin-right: 60px;
 }
 .privacy{
   color: rgba(0, 0, 0, 0.80);
-font-size: 26px;
+font-size: 20px;
 font-style: normal;
 font-weight: 700;
 
@@ -1358,9 +1355,141 @@ font-weight: 700;
 #listed{
   color: rgba(0, 0, 0, 0.75);
 font-family: Inter;
-font-size: 20px;
+font-size: 16px;
 font-style: normal;
 font-weight: 400;
  line-height: 30px; /*166.667%  */
 list-style-type: disc;
 }
+
+/*Repay Loan Page*/
+#repay-overlay {
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor: pointer; 
+}
+
+#loan-repay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  background-color: white;
+  width: 800px;
+  height: 600px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 100px;
+  border-radius: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  height: 20px;
+  width: 40px;
+  margin-top: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  margin-left: -10px;
+  top: 2px;
+  height: 15px;
+  width: 15px;
+}
+
+/*loan calc page*/
+
+#calc-overlay {
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor: pointer; 
+}
+
+#loan-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  background-color: white;
+  width: 600px;
+  height: 500px;
+  padding-left: 20px;
+  padding-right: 50px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
