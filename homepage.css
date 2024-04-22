@@ -32,7 +32,7 @@ body{
 }
 .nav-links {
   flex: 1;
-  text-align: right;
+ 
 }
 
 .nav-links ul li {
@@ -348,12 +348,13 @@ body{
 }
 
 .see-more {
-  width: 280px;
+  width: 120px;
   height: 30px;
   margin-bottom: 20px;
-  border: none;
-  background-color: white;
+  background-color: #F6C71E;
   font-weight: 700;
+  border: 0px solid #336EEB;
+  border-radius: 5px;
 }
 
 .products-icon {
@@ -411,6 +412,34 @@ body{
   border-radius: 5px;
   border: none;
 }
+
+/*About us section*/
+.abt-us {
+  background-color: white;
+  display: flex;
+  height: 500px;
+  margin-bottom: 200px;
+}
+
+.abt-text {
+  color: grey;
+  flex: 40%;
+  padding: 50px 0px 10px 0px;
+  position: relative;
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+#abt-head {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 55px;
+  color: #232323;
+  flex: 100%;
+  margin: 0%;
+  margin-top: 30px;
+}
+
 /*How It Works Section*/
 .how-it-works {
   font-size: xx-large;
@@ -713,7 +742,7 @@ flex-wrap: wrap;
 }
 
 .discuss {
-background-color: #0062E4;
+background-color: var(--Foundation-Blue-B300, #3355FD);
 width: 580px;
 height: 835px;
 color: white;
@@ -786,7 +815,7 @@ padding: 60px;
   }
   
   .discuss2{
-  background-color: #0062E4;
+  background-color: var(--Foundation-Blue-B300, #3355FD);
   width: 580px;
   height: 1100px;
   color: white;
@@ -877,8 +906,8 @@ padding: 60px;
   }
   
   .discuss3{
-  background-color: #0062E4;
-  width: 570px;
+  background-color: var(--Foundation-Blue-B300, #3355FD);
+  width: 580px;
   height: 850px;
   color: white;
   padding: 50px;
@@ -973,7 +1002,7 @@ padding: 60px;
 
 /* success page */
 .contain-success{
-  background-color:#0062E4 ;
+  background-color:var(--Foundation-Blue-B300, #3355FD);
   border:2px solid rgba(0, 0, 0, 0.20);
   border-radius: 20px;
   box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.12);
@@ -986,8 +1015,6 @@ padding: 60px;
 
 .success-image {
   width: 250px;
-  margin-top: 4rem;
-  
 }
 
 .success{
