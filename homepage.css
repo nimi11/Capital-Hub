@@ -409,8 +409,9 @@ body{
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 30px;
-  border-radius: 5px;
   border: none;
+  display: flex;
+  align-items: center;
 }
 
 /*About us section*/
@@ -681,9 +682,9 @@ body{
 
 }
 .faq-quiz:after{
-    content: "\02C5";  
+  content: "\02C5";  
   /* content:"\2228" ;  */
-  margin-left: 300px;
+  margin-left: 350px;
   font-size: 15px;
   position: relative;
 }
