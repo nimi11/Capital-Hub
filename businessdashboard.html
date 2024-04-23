@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capital Hub</title>
   <link rel="stylesheet" href="homepage.css">
+  <script src="https://.jsdelivr.net/npm/chart.js"></script>
 
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
 </head>
@@ -141,7 +142,161 @@
           </div>
         </div>
       </div>
+        <canvas id="bchart" width="30px" height="19px"></canvas>
     </div>
+
   </div>
+
+  <div>
+  
+
+  </div>
+  <script src="bdashboard.js"></script>
 </body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bar Graph</title>
+  <style>
+    .chart {
+      width: 800px;
+      height: 400px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .bar {
+      fill: steelblue;
+    }
+
+    .bar:hover {
+      fill: orange;
+    }
+
+    .axis-x,
+    .axis-y {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="chart"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    // Data
+    const data = [
+      { month: "Aug31", rating0: 0, rating5: 5.0 },
+      { month: "Sept30", rating0: 0, rating5: 5.0 },
+      { month: "Oct31", rating0: 0, rating5: 5.0 },
+      { month: "Nov30", rating0: 0, rating5: 5.0 },
+      { month: "Dec31", rating0: 0, rating5: 5.0 },
+      { month: "Jan30", rating0: 0, rating5: 5.0 },
+      { month: "Feb28", rating0: 0, rating5: 5.0 },
+      { month: "March31", rating0: 0, rating5: 5.0 }
+    ];
+
+    // SVG dimensions
+    const width = 800;
+    const height = 400;
+    const margin = { top: 20, right: 20, bottom: 50, left: 60 };
+
+    // Create SVG
+    const svg = d3.select('.chart')
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height);
+
+    const chart = svg.append('g')
+      .attr('transform', `translate(${margin.left}, ${margin.top})`);
+
+    // X scale
+    const x = d3.scaleBand()
+      .domain(data.map(d => d.month))
+      .range([0, width - margin.left - margin.right])
+      .padding(0.1);
+
+    // Y scale
+    const y = d3.scaleLinear()
+      .domain([0, 5])
+      .range([height - margin.top - margin.bottom, 0]);
+
+    // X axis
+    const xAxis = d3.axisBottom(x);
+    chart.append('g')
+      .attr('class', 'axis-x')
+      .attr('transform', `translate(0, ${height - margin.top - margin.bottom})`)
+      .call(xAxis)
+      .selectAll('text')
+      .style('text-anchor', 'end')
+      .attr('dx', '-.8em')
+      .attr('dy', '.15em')
+      .attr('transform', 'rotate(-45)');
+
+    // Y axis
+    const yAxis = d3.axisLeft(y).ticks(5);
+    chart.append('g')
+      .attr('class', 'axis-y')
+      .call(yAxis);
+
+    // Bars
+    const bars = chart.selectAll('.bar')
+      .data(data)
+      .enter()
+      .append('g')
+      .attr('class', 'bar')
+      .attr('transform', d => `translate(${x(d.month)}, 0)`);
+
+    bars.append('rect')
+      .attr('x', d => x.bandwidth() / 4)
+      .attr('y', d => y(d.rating0))
+      .attr('width', x.bandwidth() / 2)
+      .attr('height', d => height - margin.top - margin.bottom - y(d.rating0))
+      .attr('fill', 'steelblue');
+
+    bars.append('rect')
+      .attr('x', d => x.bandwidth() / 4)
+      .attr('y', d => y(d.rating5))
+      .attr('width', x.bandwidth() / 2)
+      .attr('height', d => height - margin.top - margin.bottom - y(d.rating5))
+      .attr('fill', 'orange');
+
+    // Labels
+    bars.append('text')
+      .attr('x', d => x.bandwidth() / 2)
+      .attr('y', d => y(d.rating0) - 5)
+      .attr('text-anchor', 'middle')
+      .text(d => d.rating0);
+
+    bars.append('text')
+      .attr('x', d => x.bandwidth() / 2)
+      .attr('y', d => y(d.rating5) - 5)
+      .attr('text-anchor', 'middle')
+      .text(d => d.rating5);
+
+    // Title
+    svg.append('text')
+      .attr('x', width / 2)
+      .attr('y', margin.top / 2)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', '20px')
+      .text('Ratings from August to March');
+
+  </script>
+</body>
+
 </html>

@@ -1,6 +1,7 @@
 body{
   font-family: 'Satoshi', sans-serif;
   margin: 0;
+  
 }
 
 /*Navigation Section*/
@@ -1496,4 +1497,10 @@ input:checked + .slider:before {
   margin-left: 10px;
   border-radius: 5px;
 }
+/* @media screen  and (max-width:500){
+  .navigation{
+    display: ;
+
+  }
+} */
 
