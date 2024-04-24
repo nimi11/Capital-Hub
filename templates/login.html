@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Hub</title>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
@@ -16,18 +17,20 @@
         <div style="display: flex; flex-direction: column;">
             <div class="sign-in">
                 <!-- <form action=""> -->
+                <form action="/login" method="post">
                     <h2 style="text-align: center; margin-bottom:30px;">Sign In</h2>
 
                      <p style="text-align: start; margin-left: 55px; font-weight: 500;">Email <strong style="color: #F30066;">*</strong></p>
-                    <input class="signin-input" type="text" placeholder="Enter email address">
+                    <input class="signin-input" type="text" placeholder="Enter email address" name="email">
 
                     <br>
 
                    <p style="text-align: start; margin-left: 55px; font-weight: 500;">Password <strong style="color: #F30066;">*</strong></p>
-                    <input class="signin-input" type="text" placeholder="*********"> 
+                    <input class="signin-input" type="text" placeholder="*********" name="password">
                     <br>
                     <a href="businessdashboard.html"><button class="btn-sign">Sign In</button></a>
                 <!-- </form> -->
+                </form>
             </div>
             <div class="policy">
                 <p>© All Rights Reserved. TLC Technologies</p>

@@ -1,0 +1,39 @@
+.container {
+    display: flex  !important;
+    justify-content: space-between;
+}
+
+.discuss {
+    max-width: 50%  !important;
+    flex: 0 0 50%  !important; /* Set to 50% of the container width */
+}
+
+.form-container {
+    flex: 0 0 50% !important; /* Set to 50% of the container width */
+}
+
+
+
+
+/* Add !important to other CSS properties as needed */
+
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.headers {
+    font-size: 13px;
+}

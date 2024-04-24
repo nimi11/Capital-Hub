@@ -70,6 +70,6 @@ def verification():
 
     return render_template('verification.html' , email=email)
 
-@verification_bp.route('/loan_details')
+@verification_bp.route('/loan/details')
 def loan():
-    return render_template('signup3.html')
+    return render_template('loan.html')

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Hub</title>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='signup.css') }}">
 
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
 </head>
@@ -13,7 +14,7 @@
 <body>
     <div class="container">
         <div class="discuss">
-            <img style="margin-top: 40px;" src="static\images\african (1).jpg" width="600" height="750" alt="discussion">
+            <img style="margin-top: 40px;" src="static\images\african (1).jpg" width="500" height="750" alt="discussion">
         </div>
 
         <div class="acc-info">
@@ -22,30 +23,104 @@
                 <p style="color:gray; line-height: 20px;" >Provide all the necessary details requirements</p>
             </div>
             <div class="information">
-                <p style="color: #F30066; font-size: 12px; font-weight: 400; margin-bottom: 0px;">Fields marked with * are mandatory</p>
+                <p style="color: #F30066; font-size: 12px; font-weight: 400; margin-bottom: 0px">
+                    Fields marked with * are mandatory
+                </p>
 
                 <form action="/signup" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p class="headers">Last Name <strong style="color: #F30066;">*</strong></p>
+                            <input class="signup-info" type="text" name="lastname" placeholder="Enter last name" required>
+                        </div>
+                        <div class="form-group">
+                            <p class="headers">First Name <strong style="color: #F30066;">*</strong></p>
+                            <input class="signup-info" type="text" name="firstname" placeholder="Enter first name" required>
+                        </div>
+                    </div>
 
-                <p class="headers">New Password <strong style="color: #F30066;">*</strong></p>
-                <input class="signup-info" type="text" name="password" placeholder="Enter new password">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p class="headers">Middle Name</p>
+                            <input class="signup-info" type="text" name="middlename" placeholder="Enter middle name" required>
+                        </div>
+                        <div class="form-group">
+                            <p class="headers">Date of Birth <strong style="color: #F30066;">*</strong></p>
+                            <input class="signup-info" type="date" name="dob" required>
+                        </div>
+                    </div>
 
-                <p class="headers">Verify New Password <strong style="color: #F30066;">*</strong></p>
-                <input class="signup-info" type="text" name="password2" placeholder="Enter new password">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p class="headers">Phone Number <strong style="color: #F30066;">*</strong></p>
+                            <input class="signup-info" type="text" name="phonenumber" placeholder="+234 **** *****" required>
+                        </div>
+                        <div class="form-group">
+                            <p class="headers">Email <strong style="color: #F30066;">*</strong></p>
+                            <input class="signup-info" type="email" name="email" placeholder="johndoe@gmail.com" required>
+                        </div>
+                    </div>
 
-                <p class="headers">Phone number <strong style="color: #F30066;">*</strong></p>
-                <input class="signup-info" type="text" name="number" placeholder="+234 **** *****">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p class="headers">Business Name</p>
+                            <input class="signup-info" type="text" name="businessname" placeholder="Enter business name" required>
+                        </div>
+                        <div class="form-group">
+                            <p class="headers">Business Sector</p>
+                            <input class="signup-info" type="text" name="businesssector" placeholder="Enter business sector" required>
+                        </div>
+                    </div>
 
-                <P class="headers">Email <strong style="color: #F30066;">*</strong></P>
-                <input class="signup-info" type="text" name="email" placeholder="Johndoe@gmai..com">
-                
-                <br>
-                <button class="signup-btn">Back</button>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p class="headers">Registration No/CAC</p>
+                            <input class="signup-info" type="text" name="registrationno" placeholder="Enter registration number/CAC" required>
+                        </div>
+                        <div class="form-group">
+                            <p class="headers">Bank Verification Number (BVN)</p>
+                            <input class="signup-info" type="text" name="bvn" placeholder="Enter BVN" required>
+                        </div>
+                    </div>
 
+                    <div class="form-group">
+                        <p class="headers">Business Address</p>
+                        <input class="signup-info" type="text" name="businessaddress" placeholder="Enter business address" required>
+                    </div>
 
-                <button type="submit" class="signup-btn2">Continue</button>
-            
-            </form>
-                
+                    <div class="form-group">
+                        <p class="headers">Home Address</p>
+                        <input class="signup-info" type="text" name="homeaddress" placeholder="Enter home address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p class="headers">State</p>
+                            <input class="signup-info" type="text" name="state" placeholder="Enter state" required>
+                        </div>
+                        <div class="form-group">
+                            <p class="headers">Local Government</p>
+                            <input class="signup-info" type="text" name="localgovt" placeholder="Enter local government" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p class="headers">Password <strong style="color: #F30066;">*</strong></p>
+                            <input class="signup-info" type="password" name="password" placeholder="Enter password" required>
+                        </div>
+                        <div class="form-group">
+                            <p class="headers">Confirm Password <strong style="color: #F30066;">*</strong></p>
+                            <input class="signup-info" type="password" name="password2" placeholder="Confirm password" required>
+                        </div>
+                    </div>
+
+                    <br>
+                    ,<a href="/"><button class="signup-btn">Back</button></a>
+                    <button type="submit" class="signup-btn2">Continue</button>
+
+               </form>
+
             </div>
         </div>
 
