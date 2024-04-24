@@ -14,19 +14,20 @@ def allowed_file(filename):
 
 @verification_bp.route('/verification', methods=['GET', 'POST'])
 def verification():
+    email = request.args.get('email')
     if request.method == 'POST':
         # Get form data
         passport = request.files['passport']
-        identification = request.files['identification']
+        valid_identification = request.files['identification']
         tax_statement = request.files['tax_statement']
         bank_statement = request.files['bank_statement']
         reference = request.form['reference']
         relationship = request.form['relationship']
         reference_contact = request.form['reference_contact']
-        email = request.args.get('email')
+        email = request.form.get('email')
 
         # Check if all required files are provided
-        if not (passport and identification and tax_statement and bank_statement):
+        if not (passport and valid_identification and tax_statement and bank_statement):
             flash('Please provide all required documents', 'error')
             return redirect(request.url)
 
@@ -41,35 +42,34 @@ def verification():
 
         # Save uploaded files to user's directory
         passport_filename = secure_filename(passport.filename)
-        identification_filename = secure_filename(identification.filename)
+        identification_filename = secure_filename(valid_identification.filename)
         tax_statement_filename = secure_filename(tax_statement.filename)
         bank_statement_filename = secure_filename(bank_statement.filename)
 
         passport.save(os.path.join(user_dir, passport_filename))
-        identification.save(os.path.join(user_dir, identification_filename))
+        valid_identification.save(os.path.join(user_dir, identification_filename))
         tax_statement.save(os.path.join(user_dir, tax_statement_filename))
         bank_statement.save(os.path.join(user_dir, bank_statement_filename))
 
         # Save verification documents to the database
         verification_doc = Verification(
             passport=passport_filename,
-            identification=identification_filename,
+            valid_identification=identification_filename,
             tax_statement=tax_statement_filename,
             bank_statement=bank_statement_filename,
             reference=reference,
             relationship=relationship,
-            reference_contact=reference_contact,
-            user_email=email
+            reference_contact=reference_contact
         )
 
         db.session.add(verification_doc)
         db.session.commit()
 
         flash('Verification documents uploaded successfully', 'success')
-        return redirect(url_for('loan'))
+        return redirect(url_for('verification.loan'))
 
-    return render_template('verification.html')
+    return render_template('verification.html' , email=email)
 
-@verification_bp.route('/verification/success')
+@verification_bp.route('/loan_details')
 def loan():
     return render_template('signup3.html')
