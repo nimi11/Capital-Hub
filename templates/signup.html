@@ -23,27 +23,29 @@
             </div>
             <div class="information">
                 <p style="color: #F30066; font-size: 12px; font-weight: 400; margin-bottom: 0px;">Fields marked with * are mandatory</p>
-                
-                <p class="headers">New User ID <strong style="color: #F30066;">*</strong></p>
-                <input class="signup-info" type="text" placeholder="Enter user ID" name="email">
+
+                <form action="/signup" method="post">
 
                 <p class="headers">New Password <strong style="color: #F30066;">*</strong></p>
-                <input class="signup-info" type="text" name="name" placeholder="Enter new password">
+                <input class="signup-info" type="text" name="password" placeholder="Enter new password">
 
                 <p class="headers">Verify New Password <strong style="color: #F30066;">*</strong></p>
-                <input class="signup-info" type="text" name="" placeholder="Enter new password">
+                <input class="signup-info" type="text" name="password2" placeholder="Enter new password">
 
                 <p class="headers">Phone number <strong style="color: #F30066;">*</strong></p>
-                <input class="signup-info" type="text" name="" placeholder="+234 **** *****">
+                <input class="signup-info" type="text" name="number" placeholder="+234 **** *****">
 
                 <P class="headers">Email <strong style="color: #F30066;">*</strong></P>
-                <input class="signup-info" type="text" name="" placeholder="Johndoe@gmai..com">
+                <input class="signup-info" type="text" name="email" placeholder="Johndoe@gmai..com">
                 
                 <br>
                 <button class="signup-btn">Back</button>
 
-                <a href="signup2.html">
-                <button  class="signup-btn2">Continue</button></a>
+
+                <button type="submit" class="signup-btn2">Continue</button>
+            
+            </form>
+                
             </div>
         </div>
 

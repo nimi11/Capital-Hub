@@ -1,8 +1,14 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body{
   font-family: 'Satoshi', sans-serif;
   margin: 0;
-  
+  padding-top: 60px;
 }
+  
+
 
 /*Navigation Section*/
 .navigation {
