@@ -35,7 +35,7 @@ def signup():
 
         # Redirect to the login page after successful signup
         flash('Account created successfully. Please log in.', 'success')
-        return render_template('signup2.html')
+        return redirect(url_for('verification.verification',email=email))
 
     return render_template('signup.html')
 
