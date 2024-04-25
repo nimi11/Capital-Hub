@@ -101,10 +101,7 @@ def dashboard():
    user_id = session.get('user_id')  # Retrieve user ID from the session
    if user_id:
         user = User.query.get(user_id)  # Query the database for the user
-        if user:
-            full_name = f"{user.firstname} {user.lastname}".title()
-        else:
-            full_name = "User"  # Default name if user not found
+        full_name = f"{user.firstname} {user.lastname}".title()
    else:
         return url_for("login")
 
