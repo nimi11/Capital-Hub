@@ -24,14 +24,14 @@ def calculator():
                 flash('Maximum tenure allowed is 24 months.', 'error')
                 return redirect(url_for('calc.calculator'))
         
-        principal_amount = amount
+        principal_amount = "{:,.2f}".format(amount)
  # Perform loan calculations
         monthly_interest_rate = get_monthly_interest_rate(tenure)
         payment_per_period = calculate_payment_per_period(amount, monthly_interest_rate, tenure)
         total_interest_payable = calculate_total_interest_payable(amount, tenure)
-        total_amount_payable = round(amount + total_interest_payable, 2)
-        payment_per_period = round(payment_per_period, 2)
-        total_interest_payable = round(total_interest_payable, 2)
+        total_amount_payable = "{:,.2f}".format(round(amount + total_interest_payable, 2))
+        payment_per_period = "{:,.2f}".format(round(payment_per_period, 2))
+        total_interest_payable = "{:,.2f}".format(round(total_interest_payable, 2))
 
         return render_template("loancalculator.html", 
                                 principal_amount=principal_amount,
