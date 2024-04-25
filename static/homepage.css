@@ -1542,3 +1542,14 @@ input:checked + .slider:before {
   }
 } */
 
+.flash-message{
+  color: #243BB1 ;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 20px;
+  list-style: none;
+  
+  
+  
+}
