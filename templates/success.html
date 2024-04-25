@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Hub</title>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
     
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
 </head>
@@ -23,12 +23,12 @@
                 provide details
                 of your status.<br> You can also view status for updates.
             </p>
-           <a href="userboard.html">
+           <a href="/dashboard">
                 <button class="see-progress">Go to Dashboard</button>
            </a>
            
 
-            <a href="index.html">
+            <a href="/">
             <button class="back-home">Back to Home</button></a>
         </div>
 

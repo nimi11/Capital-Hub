@@ -79,7 +79,7 @@ def verification():
 
     return render_template('verification.html' , email=email)
 
-@verification_bp.route('/loan/details')
+@verification_bp.route('/loan/details' , methods=['GET', 'POST'])
 def loan():
 # Retrieve user_id from session
     user_id = session.get('user_id')
@@ -134,5 +134,10 @@ def loan():
         db.session.commit()
 
         flash('Loan details saved successfully!', 'success')
+        return redirect(url_for('verification.success'))
 
     return render_template('loan.html')
+
+@verification_bp.route('/success')
+def success():
+    return render_template("success.html")
