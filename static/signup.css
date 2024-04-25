@@ -1,11 +1,23 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+
 .container {
     display: flex  !important;
-    justify-content: space-between;
+    /* margin-top: -60px; */
+    /* padding-top: 0px; */
+  
+    /* justify-content: space-between;  */
 }
 
 .discuss {
-    max-width: 50%  !important;
-    flex: 0 0 50%  !important; /* Set to 50% of the container width */
+     max-width: 50%  !important;
+     width: 550px;
+     height: 1370px;
+    /* flex: 0 0 50%  !important; */
+     /* Set to 50% of the container width */
 }
 
 .form-container {
