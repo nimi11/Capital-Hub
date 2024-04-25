@@ -73,19 +73,14 @@
     </div>
 
     <div class="loan-calc1">
-        <form action="/loan/calculator">
-            <label class="label"  for="loan amount">
-                LOAN AMOUNT</label>
-                <input   style="margin-left: 6px; margin-top: 10px;"   class="signup-btn3" type="text" placeholder="NGN" name="amount"><br>
-                <label class="label" for="loan tenor">
-                    LOAN TENOR</label>
-                    <input style="margin-left: 16px; margin-top: 10px;" class="signup-btn3" type="text"
-                    placeholder="MONTHS"> <br>
-                        <!-- 
-                      <label class="label" for="loan tenor">
-                      LOAN TENURE</label><input style="margin-left: 20px; margin-top: 10px" class="signup-btn3" type="text" placeholder="MONTHS" name="tenure"> <br>
-                     -->
-            <p style="color: rgba(61, 61, 61, 0.70); margin-top: 40px;">Check your loan eligibility <a href="/loan/calculator"><strong style="color: #3355FD; text-decoration: underline; ">here</strong></a></p>
+        <form action="/loan/calculator" method="post">
+            <label class="label" for="loan amount">
+                LOAN AMOUNT</label><input  class="signup-btn3" type="text" placeholder="NGN" name="amount"><br>
+
+            <label class="label" for="loan tenor">
+                    LOAN TENURE</label><input style="margin-left: 20px; margin-top: 10px" class="signup-btn3" type="text" placeholder="MONTHS" name="tenure"> <br>
+                    
+            <p style="color: rgba(61, 61, 61, 0.70);">Check your loan eligibility <a href="/loan/calculator"><strong style="color: #3355FD; text-decoration: underline; ">here</strong></a></p>
 
             <button type="submit" style="width: 110px; padding: 4px 10px; border: 1px solid #414141; border-radius: 4px;">Calculate</button>
             <button type="reset" style="width: 110px; padding: 6px 10px;margin-left: 20px; background-color:  #3355FD ;color: white; border-radius: 4px; border: none;">Clear</button>

@@ -16,6 +16,9 @@ def calculator():
         amount = float(request.form.get('amount'))
         tenure = int(request.form.get('tenure'))
         
+        print("Amount:", amount)
+        print("Tenure:", tenure)
+
         # Perform loan calculations here
         if tenure > 24:
                 flash('Maximum tenure allowed is 24 months.', 'error')
@@ -24,15 +27,25 @@ def calculator():
         principal_amount = amount
  # Perform loan calculations
         monthly_interest_rate = get_monthly_interest_rate(tenure)
+        print("Monthly interest rate:", monthly_interest_rate)
         payment_per_period = calculate_payment_per_period(amount, monthly_interest_rate, tenure)
+        print("Payment per period:", payment_per_period)
+        
         total_interest_payable = calculate_total_interest_payable(amount, monthly_interest_rate, tenure)
+        print("Total interest payable:", total_interest_payable)
+        
         total_amount_payable = amount + total_interest_payable
+        print("Total amount payable:", total_amount_payable)
         return render_template("loancalculator.html", 
                                 principal_amount=principal_amount,
                                 payment_per_period=payment_per_period,
                                 total_interest_payable=total_interest_payable,
                                 total_amount_payable=total_amount_payable)
-    return render_template("loancalculator.html")
+    return render_template("loancalculator.html", 
+                                principal_amount=principal_amount,
+                                payment_per_period=payment_per_period,
+                                total_interest_payable=total_interest_payable,
+                                total_amount_payable=total_amount_payable)
 
 def get_monthly_interest_rate(tenure):
     if 2 <= tenure <= 6:
@@ -50,8 +63,24 @@ def calculate_payment_per_period(amount, monthly_interest_rate, tenure):
     r = monthly_interest_rate
     return (r * amount) / (1 - (1 + r) ** -n)
 
-def calculate_total_interest_payable(amount, tenure):
+# def calculate_total_interest_payable(amount, monthly_interest_rate, tenure):
+#     payment_per_period = calculate_payment_per_period(amount, monthly_interest_rate, tenure)
+#     total_payment = payment_per_period * tenure     
+#     total_interest_payable = total_payment - amount
+#     return total_interest_payable
+
+def calculate_total_interest_payable(amount, monthly_interest_rate, tenure):
+    print("Amount:", amount)
+    print("Monthly Interest Rate:", monthly_interest_rate)
+    print("Tenure:", tenure)
+    
     payment_per_period = calculate_payment_per_period(amount, monthly_interest_rate, tenure)
+    print("Payment Per Period:", payment_per_period)
+    
     total_payment = payment_per_period * tenure
+    print("Total Payment:", total_payment)
+    
     total_interest_payable = total_payment - amount
+    print("Total Interest Payable:", total_interest_payable)
+    
     return total_interest_payable
