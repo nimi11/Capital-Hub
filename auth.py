@@ -98,4 +98,11 @@ def login():
 
 @auth_bp.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
-   return render_template("userdashboard4.html")
+   user_id = session.get('user_id')  # Retrieve user ID from the session
+   if user_id:
+        user = User.query.get(user_id)  # Query the database for the user
+        full_name = f"{user.firstname} {user.lastname}".title()
+   else:
+        return url_for("login")
+
+   return render_template("userdashboard4.html", full_name=full_name)

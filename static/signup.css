@@ -20,35 +20,43 @@ body{
      /* Set to 50% of the container width */
 }
 
-.form-container {
-    flex: 0 0 30% !important; /* Set to 50% of the container width */
-}
+    .form-container {
+        flex: 0 0 30% !important; /* Set to 50% of the container width */
+    }
 
 
 
 
-/* Add !important to other CSS properties as needed */
+    /* Add !important to other CSS properties as needed */
 
 
-.form-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-    gap: 10px;
-}
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        gap: 10px;
+    }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    flex: 1;
-    margin-right: 15px;
-}
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        flex: 1;
+        margin-right: 15px;
+    }
 
-.form-group:last-child {
-    margin-right: 0;
-}
+    .form-group:last-child {
+        margin-right: 0;
+    }
 
-.headers {
-    font-size: 13px;
-}
+    .headers {
+        font-size: 13px;
+    }
+   input.long{
+        
+        width: 100%; /* Make it stretch horizontally */
+        flex-basis: auto; /* Override the flex-basis property */
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    
+    }
+
