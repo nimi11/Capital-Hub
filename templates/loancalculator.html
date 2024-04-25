@@ -27,10 +27,10 @@
               <path d="M4.91888 6.76113L0.242419 2.15319C-0.0808065 1.8347 -0.0808065 1.3197 0.242419 1.0046L1.01954 0.238867C1.34276 -0.0796225 1.86543 -0.0796225 2.18521 0.238867L5.5 3.50508L8.81479 0.238867C9.13801 -0.0796225 9.66068 -0.0796225 9.98046 0.238867L10.7576 1.0046C11.0808 1.32309 11.0808 1.83809 10.7576 2.15319L6.08112 6.76113C5.76477 7.07962 5.24211 7.07962 4.91888 6.76113Z" fill="black" fill-opacity="0.3"/>
             </svg><br>
 
-            <label style="font-weight: 700;" for="">How much do you want to borrow?</label><br>
+            <label style="font-weight: 700;" for="">AMOUNT</label><br>
             <input style="width: 350px; border: 1px solid rgba(0, 98, 228, 0.30); padding: 8px; border-radius: 5px; margin-top: 10px; color: rgba(0, 0, 0, 0.30); font-size: 12px; margin-bottom: 10px;" type="text" placeholder="Enter amount"><br>
 
-            <label style="font-weight: 700;" for="">How long do you want to pay back?</label><br>
+            <label style="font-weight: 700;" for="">TENURE</label><br>
             <input style="width: 350px; border: 1px solid rgba(0, 98, 228, 0.30); padding: 8px; border-radius: 5px; margin-top: 10px; color: rgba(0, 0, 0, 0.30); font-size: 12px; margin-bottom: 10px;" type="text" placeholder="Select duration"><svg style="margin-left: -20px;" xmlns="http://www.w3.org/2000/svg" width="11" height="5" viewBox="0 0 11 7" fill="none">
               <path d="M4.91888 6.76113L0.242419 2.15319C-0.0808065 1.8347 -0.0808065 1.3197 0.242419 1.0046L1.01954 0.238867C1.34276 -0.0796225 1.86543 -0.0796225 2.18521 0.238867L5.5 3.50508L8.81479 0.238867C9.13801 -0.0796225 9.66068 -0.0796225 9.98046 0.238867L10.7576 1.0046C11.0808 1.32309 11.0808 1.83809 10.7576 2.15319L6.08112 6.76113C5.76477 7.07962 5.24211 7.07962 4.91888 6.76113Z" fill="black" fill-opacity="0.3"/>
             </svg> <br>
@@ -60,10 +60,11 @@
               </div>
 
               <div style="text-align: center; padding: 5px 20px;">
-                <p>₦200,000.00</p>
-                <p>₦27,222.22</p>
-                <p>₦45,000.00</p>
-                <p>₦245,000.00</p>
+                <p>₦{{ principal_amount }}</p>
+                <p>₦{{ payment_per_period }}</p>
+                <p>₦{{ total_interest_payable }}</p>
+                <p>₦{{ total_amount_payable }}</p>
+        
               </div>
             </div>
 
