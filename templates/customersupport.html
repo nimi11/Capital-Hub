@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capital Hub</title>
-  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
 
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
   <section>
     <div class="blank">
       <div style="margin-left: 1000px;" class="logo">
-        <a href="#"><img class="logo-img" src="{{ url_for('static', filename='images/capital hub.png')}}" alt="Logo">
+        <a href="#"><img class="logo-img" src="{{ url_for('static', filename='images/capital-hub.png')}}" alt="Logo">
         </a>
       </div>
     </div>

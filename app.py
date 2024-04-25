@@ -5,7 +5,7 @@ from flask_migrate import Migrate
 from auth import auth_bp
 from calc import calc_bp
 from verification import verification_bp 
-# from other_functionality import other_bp
+from other import other_bp
 
 
 
@@ -18,7 +18,7 @@ migrate = Migrate(app, db)
 app.register_blueprint(auth_bp)
 app.register_blueprint(calc_bp)
 app.register_blueprint(verification_bp) 
-# app.register_blueprint(other_bp)
+app.register_blueprint(other_bp)
 
 @app.route('/')
 def index():

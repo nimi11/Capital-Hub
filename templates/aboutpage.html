@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Hub</title>
 
-<link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
 
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="navigation">
         <div class="logo">
-                <a href="#"><img style="width: 190px;" class="logo-img" src="{{ url_for('static', filename='images/capital hub.png')}}" alt="Logo">
+                <a href="#"><img style="width: 190px;" class="logo-img" src="{{ url_for('static', filename='images/capital-hub.png')}}" alt="Logo">
                 </a>
         </div>
     
@@ -21,32 +21,32 @@
             <nav class="nav-links">
                 <ul>
                     <li>
-                       <a href="">
+                       <a href="/">
                             <span style="margin-left: 150px; color: rgba(30, 30, 30, 0.57);" class="title">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="aboutpage.html">
+                        <a href="{{url_for('other.about')}}">
                             <span  class="title">About Us</span>
                         </a>
                     </li>
                     <li>
-                        <a href="productspage.html">
+                        <a href="{{url_for('other.products')}}">
                             <span style="color: rgba(30, 30, 30, 0.57);" class="title">Products</span>
                         </a>
                     </li>
                     <li>
-                        <a href="resources.html">
+                        <a href="{{url_for('other.blog')}}">
                             <span style="color: rgba(30, 30, 30, 0.57);" class="title">Blog</span>
                         </a>
                     </li>
                     <li>
-                        <a href="signin.html">
+                        <a href="{{url_for('auth.login')}}">
                             <span style="margin-left: 250px;" class="title"><button class="login">Login</button></span>
                         </a>
                     </li>
                     <li>
-                        <a href="signup.html">
+                        <a href="{{url_for('auth.signup')}}">
                             <span style="margin-left: -30px;" class="title"><button class="open">Apply</button></span>
                         </a>
                     </li>
@@ -161,7 +161,7 @@
                     <img style="width: 200px; height: 180px; margin-top: 20px;"
                         src="{{ url_for('static', filename='/images/image 24 (3).jpg')}}" alt="">
                         <img style="width: 150px; height: 130px; margin-top: 20px;"
-                            src="{{ url_for('static', filename='/images/image 24 (2).jpg'}}" alt="">
+                            src="{{ url_for('static', filename='/images/image 24 (2).jpg')}}" alt="">
                    </div>
 
         </div>

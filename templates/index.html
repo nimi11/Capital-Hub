@@ -24,17 +24,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="aboutpage.html">
+                    <a href="{{url_for('other.about')}}">
                         <span class="title">About Us</span>
                     </a>
                 </li>
                 <li>
-                    <a href="template/">
+                    <a href="{{url_for('other.products')}}">
                         <span class="title">Products</span>
                     </a>
                 </li>
                 <li>
-                    <a href="resources.html">
+                    <a href="{{url_for('other.blog')}}">
                         <span class="title">Blog</span>
                     </a>
                 </li>
@@ -79,7 +79,7 @@
                 });
             });
         </script>
-    <div class="intro-text">
+    <div class="intro-text" id="tor">
         <button class="b-loan"><strong>Get up to &#8358 5 million loan for your business </strong></button>
         <h1 id="head1">Quick and Easy <br> Loans for Your<br>Business Needs.
         </h1>
@@ -88,15 +88,15 @@
             experience, providing you with the funds you need in a timely  <br> 
             manner to meet your business financial needs. 
         </p>
-        <a style="color: black;" class="btn-apply" href="signup.html">Apply now &#8599</strong></a>
+        <a style="color: black;" class="btn-apply" href="{{url_for('auth.signup')}}">Apply now &#8599</strong></a>
     </div>
 
     <div class="handshake">
         <img style="border-radius: 5px;" src="{{ url_for('static', filename='images/smiling-girl.jpg') }}" width="600" height="450" alt="handshake">   
     </div>
 
-    <div class="loan-calc1">
-        <form action="/loan/calculator" method="post">
+    <div class="loan-calc1"  >
+        <form action="/loan/calculator" method="post" >
             
             <label   class="label" for="loan amount">
                 LOAN AMOUNT</label>
@@ -149,7 +149,7 @@
         </div>
     </div>
 
-    <div class="see-more-btn"><a href="productspage.html"><button class="see-more">View More</button></a></div>
+    <div class="see-more-btn"><a href="{{url_for('other.products')}}"><button class="see-more">View More</button></a></div>
 </section>
     
 <section>
@@ -201,7 +201,7 @@
             Quick approvals, competitive rates, and personalized  <br> 
             solutions to meet your business unique needs. <br>Apply online today! 
         </p>
-        <a style="color: black;" class="btn-apply" href="aboutpage.html">Learn more</strong></a>
+        <a style="color: black;" class="btn-apply" href="{{url_for('other.about')}}">Learn more</strong></a>
     </div>
 
     <div class="handshake">
@@ -267,7 +267,7 @@
         <div class="calc-writeup">
             <h1 style="font-size: 46px;">Calculate your loan <br> repayment in 10 seconds</h1>
             <p style="color: rgba(61, 61, 61, 0.57);">Use CapitalHub to estimate how <br> much you need to pay monthly, your interest <br> and total payment.</p>
-            <a href="loancalculator.html"><button style="height: 40px; width: 100px; font-weight: 700; background-color: #FDDD32;border-radius: 5px; border: none;">Calculate</button></a>
+            <a href="#tor" ><button style="height: 40px; width: 100px; font-weight: 700; background-color: #FDDD32;border-radius: 5px; border: none;">Calculate</button></a>
         </div>
 
         <div class="calc-image">
@@ -383,10 +383,10 @@
         </div>
         <div>
             <h1>Company</h1>
-            <a style="text-decoration: none; color: white;" href="aboutpage.html"><p>About</p></a>
+            <a style="text-decoration: none; color: white;" href="{{url_for('other.about')}}"><p>About</p></a>
             <p>FAQ</p>
-            <a style="text-decoration: none; color: white;" href="resources.html"><p>Resources</p></a>
-            <a style="text-decoration: none; color: white;" href="loanapplication.html"><p>Apply for Loan</p></a> 
+            <a style="text-decoration: none; color: white;" href="{{url_for('other.blog')}}"><p>Resources</p></a>
+            <a style="text-decoration: none; color: white;" href="{{url_for('other.loanapplication')}}"><p>Apply for Loan</p></a> 
         </div>
         <div>
             <p style="margin-top: 30px;">28 Mobos Shola, Lekki Phase 1, <br> Lagos, Nigeria</p>
