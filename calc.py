@@ -22,7 +22,7 @@ def calculator():
         # Perform loan calculations here
         if tenure > 24:
                 flash('Maximum tenure allowed is 24 months.', 'error')
-                return redirect(url_for('calc.calculator'))
+                return redirect(url_for('index'))
         
         principal_amount = "{:,.2f}".format(amount)
  # Perform loan calculations
