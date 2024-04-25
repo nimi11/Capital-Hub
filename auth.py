@@ -33,6 +33,12 @@ def signup():
         if password != password2:
             flash('Passwords do not match', 'error')
             return redirect(url_for('auth.signup'))
+        
+         # Check if the email already exists in the database
+        existing_user = User.query.filter_by(email=email).first()
+        if existing_user:
+            flash('Email address already exists. Please use a different email.', 'error')
+            return redirect(url_for('auth.signup'))
 
         # Hash the password before storing it in the database
         hashed_password = generate_password_hash(password)
