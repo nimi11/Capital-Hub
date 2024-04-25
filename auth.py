@@ -1,5 +1,5 @@
 # auth.py
-from flask import Blueprint, render_template, redirect, url_for, flash, request
+from flask import Blueprint, render_template, redirect, url_for, flash, request, session
 from werkzeug.security import generate_password_hash, check_password_hash
 from database import db, User
 from datetime import datetime
@@ -59,6 +59,7 @@ def signup():
         # Add the user to the database
         db.session.add(new_user)
         db.session.commit()
+        session['user_id'] = new_user.id
 
         # Redirect to the login page after successful signup
         flash('Account created successfully. Please log in.', 'success')
@@ -78,6 +79,7 @@ def login():
             # Check if the password matches
             if check_password_hash(user.password, password):
                 # Password matches, redirect to dashboard or home page
+                session['user_id'] = user.id
                 return redirect(url_for('auth.dashboard'))
             else:
                 flash('Incorrect email or password', 'error')

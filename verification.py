@@ -1,7 +1,7 @@
 import os
-from flask import Blueprint, request, redirect, url_for, render_template, flash
+from flask import Blueprint, request, redirect, url_for, render_template, flash,session
 from werkzeug.utils import secure_filename
-from database import db, Verification, User
+from database import db, Verification, User, Loan
 
 verification_bp = Blueprint('verification', __name__)
 
@@ -16,6 +16,14 @@ def allowed_file(filename):
 def verification():
     email = request.args.get('email')
     if request.method == 'POST':
+         # Get user_id from session
+        user_id = session.get('user_id')
+
+        # Ensure user is logged in
+        if not user_id:
+            flash('Please log in to access this page.', 'error')
+            return redirect(url_for('auth.login'))
+
         # Get form data
         passport = request.files['passport']
         valid_identification = request.files['identification']
@@ -53,6 +61,7 @@ def verification():
 
         # Save verification documents to the database
         verification_doc = Verification(
+            user_id=user_id,
             passport=passport_filename,
             valid_identification=identification_filename,
             tax_statement=tax_statement_filename,
@@ -72,4 +81,58 @@ def verification():
 
 @verification_bp.route('/loan/details')
 def loan():
+# Retrieve user_id from session
+    user_id = session.get('user_id')
+
+    # Ensure user is logged in
+    if not user_id:
+        flash('Please log in to access this page.', 'error')
+        return redirect(url_for('auth.login'))
+
+    if request.method == 'POST':
+        # Get form data
+        loan_type = request.form['loan_type']
+        loan_amount = request.form['loan_amount']
+        tenure = request.form['tenure']
+        repayment_source = request.form['repayment_source']
+        bank = request.form['bank']
+        account_name = request.form['account_name']
+        account_type = request.form['account_type']
+        account_no = request.form['account_no']
+        driver_license = request.form['driver_license']
+        bvn = request.form['bvn']
+
+        # Validate form data
+        if len(account_no) != 10:
+            flash('Account number must be 10 digits long.', 'error')
+            return redirect(request.url)
+        if len(driver_license) > 8:
+            flash('Driver license number must not exceed 8 characters.', 'error')
+            return redirect(request.url)
+        if int(tenure) > 12 or int(tenure) < -1:
+            flash('Invalid tenure value. Tenure must be between -1 and 12 months.', 'error')
+            return redirect(request.url)
+        if len(bvn) != 11:
+            flash('BVN must be 11 digits long.', 'error')
+            return redirect(request.url)
+
+        # If validation passes, save loan details to database
+        new_loan = Loan(
+            user_id=user_id,
+            loan_type=loan_type,
+            loan_amount=loan_amount,
+            tenure=tenure,
+            repayment_source=repayment_source,
+            bank=bank,
+            account_name=account_name,
+            account_type=account_type,
+            account_no=account_no,
+            driver_license=driver_license,
+            bvn=bvn
+        )
+        db.session.add(new_loan)
+        db.session.commit()
+
+        flash('Loan details saved successfully!', 'success')
+
     return render_template('loan.html')

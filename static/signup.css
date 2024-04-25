@@ -9,7 +9,7 @@
 }
 
 .form-container {
-    flex: 0 0 50% !important; /* Set to 50% of the container width */
+    flex: 0 0 30% !important; /* Set to 50% of the container width */
 }
 
 

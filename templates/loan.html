@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Hub</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
 
 
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
@@ -16,73 +16,82 @@
         <div class="acc-info3">
             <div class="account3">
                 <h1>Signing up to Capital Hub</h1>
-                <p style=" line-height: 20px;">Provide all the necessary details to move to next stage </p>
+                <p style="line-height: 20px;">Provide all the necessary details to move to the next stage</p>
             </div>
             <div class="information3">
-
                 <p style="color: #F30066; font-size: 12px; font-weight: 400; margin-bottom: 0px;">Fields marked with * are mandatory</p>
 
-                <div class="form-group2">
-                    <div style="display: flex; flex-direction: column;"><p class="headers3">Loan Type <strong style="color: #F30066;">*</strong></p>
-                    <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name="name" placeholder="Select loan type" >
-                    
-                </div>
-                    
-                    <div style="display: flex; flex-direction: column;"><p class="headers3">Loan Amount <strong style="color: #F30066;">*</strong></p>
-                    <input style="color: rgba(0, 0, 0, 0.30);"  class="signup-info3" type="text" name="" placeholder="Enter figure"></div>
-                </div>
-
-                <div class="form-group2">
-                    <div style="display: flex; flex-direction: column;"><p class="headers3">Tenure <strong style="color: #F30066;">*</strong></p>
-                    <input style="color: rgba(0, 0, 0, 0.30);"  class="signup-info3" type="text" name="" placeholder=" Select tenure"></div>
-
-                    <div style="display: flex; flex-direction: column;"><p class="headers3">Repayment Source <strong style="color: #F30066;">*</strong></P>
-                    <input style="color: rgba(0, 0, 0, 0.30);"  class="signup-info3" type="text" name="" placeholder="Enter how you choose to pay "></div>
-                </div>
-
-            
-                <div class="form-group2">
-                    <div style="display: flex; flex-direction: column;"><p class="headers3">Bank  <strong style="color: #F30066;">*</strong></p>
-                    <input  style="color: rgba(0, 0, 0, 0.30);"  class="signup-info3" type="text" name="" placeholder="Select bank"></div>
-
-                    <div style="display: flex; flex-direction: column;"><p class="headers2">Account Name<strong style="color: #F30066;">*</strong></p>
-                    <input  style="color: rgba(0, 0, 0, 0.30);"  class="signup-info3" type="text" name="" placeholder="Enter name on account"></div>
-                </div>
-
-                <div class="form-group2">
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="headers3">Account Type <strong style="color: #F30066;">*</strong></p>
-                        <input   style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name="" placeholder="Savings or current">
+                <form action="/signup" method="post">
+                    <div class="form-group2">
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="loan-type" class="headers3">Loan Type <strong style="color: #F30066;">*</strong></label>
+                            <select id="loan-type" class="signup-info3" name="loan_type" required>
+                                <option value="">Select loan type</option>
+                                <option value="Working capital">Working capital</option>
+                                <option value="Agro loans">Agro loans</option>
+                                <option value="Startup loans">Startup loans</option>
+                                <option value="Bridge loans">Bridge loans</option>
+                                <option value="Equipment Financing">Equipment Financing</option>
+                            </select>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="loan-amount" class="headers3">Loan Amount <strong style="color: #F30066;">*</strong></label>
+                            <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" id="loan-amount" name="loan_amount" placeholder="Enter figure" required>
+                        </div>
                     </div>
-                
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="headers2">Account no <strong style="color: #F30066;">*</strong></p>
-                        <input  style="color: rgba(0, 0, 0, 0.30);"  class="signup-info3" type="text" name="" placeholder="Enter your bank accoun no">
-                    </div>
-                </div>
 
-                <div class="form-group2">
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="headers3">Driver License <strong style="color: #F30066;">*</strong></p>
-                        <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name="" placeholder=" Enter registration no">
+                    <div class="form-group2">
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="tenure" class="headers3">Tenure <strong style="color: #F30066;">*</strong></label>
+                            <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" id="tenure" name="tenure" placeholder="Select tenure" required>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="repayment-source" class="headers3">Repayment Source <strong style="color: #F30066;">*</strong></label>
+                            <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" id="repayment-source" name="repayment_source" placeholder="Enter how you choose to pay" required>
+                        </div>
                     </div>
-                
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="headers2">Bank Verification number <strong style="color: #F30066;">*</strong></p>
-                        <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name="" placeholder="Enter your BVN">
-                    </div>
-                </div>
 
-                
-                <br>
+                    <div class="form-group2">
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="bank" class="headers3">Bank <strong style="color: #F30066;">*</strong></label>
+                            <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" id="bank" name="bank" placeholder="Select bank" required>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="account-name" class="headers2">Account Name<strong style="color: #F30066;">*</strong></label>
+                            <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" id="account-name" name="account_name" placeholder="Enter name on account" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group2">
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="account-type" class="headers3">Account Type <strong style="color: #F30066;">*</strong></label>
+                            <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" id="account-type" name="account_type" placeholder="Savings or current" required>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="account-no" class="headers2">Account no <strong style="color: #F30066;">*</strong></label>
+                            <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" id="account-no" name="account_no" placeholder="Enter your bank account no" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group2">
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="driver-license" class="headers3">Driver License <strong style="color: #F30066;">*</strong></label>
+                            <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" id="driver-license" name="driver_license" placeholder="Enter registration no" required>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="bvn" class="headers2">Bank Verification number <strong style="color: #F30066;">*</strong></label>
+                            <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" id="bvn" name="bvn" placeholder="Enter your BVN" required>
+                        </div>
+                    </div>
+
+                    <br>
+                    <button type="submit" class="signup-btn2-3">Continue</button>
+                </form>
+
                 <a href="signup2.html">
-                    <button class="signup-btn-3">Back</button></a>
-                
-                <a href="success.html">   
-                <button class="signup-btn2-3">Continue</button></a>
+                    <button class="signup-btn-3">Back</button>
+                </a>
             </div>
-
-            
         </div>
 
         <div class="discuss3">
