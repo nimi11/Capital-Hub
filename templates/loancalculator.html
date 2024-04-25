@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
 
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
   <div style="background-color: #3355FD; height: 900px; margin: none; padding: 40px;">
     <div style="background-color: white; width: 900px; margin-left: 190px; margin-top: 30px; height: 770px; border-radius: 5px;">
       <div style="margin-left: -40px;" class="logo">
-        <a href="#"><img style="height: 30px;" class="logo-img" src="{{ url_for('static', filename='images/capital hub.png')}}" alt="Logo">
+        <a href="#"><img style="height: 30px;" class="logo-img" src="{{ url_for('static', filename='images/capital-hub.png')}}" alt="Logo">
         </a>
       </div>
 

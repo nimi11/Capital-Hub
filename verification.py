@@ -109,8 +109,8 @@ def loan():
         if len(driver_license) > 8:
             flash('Driver license number must not exceed 8 characters.', 'error')
             return redirect(request.url)
-        if int(tenure) > 12 or int(tenure) < -1:
-            flash('Invalid tenure value. Tenure must be between -1 and 12 months.', 'error')
+        if int(tenure) > 24 or int(tenure) < -1:
+            flash('Invalid tenure value. Tenure must be between 1 and 24 months.', 'error')
             return redirect(request.url)
         if len(bvn) != 11:
             flash('BVN must be 11 digits long.', 'error')
