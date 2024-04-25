@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capital Hub</title>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
+
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="navigation">
+    <div class="logo">
+            <a href="#"><img style="width: 190px;" class="logo-img" src="{{ url_for('static', filename='images/capital-hub.png') }}" alt="Logo">
+            </a>
+    </div>
+
+    <div class="nav">
+        <nav class="nav-links">
+            <ul>
+                <li>
+                   <a href="">
+                        <span style="margin-left: 150px;" class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="aboutpage.html">
+                        <span class="title">About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="productspage.html">
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="resources.html">
+                        <span class="title">Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{url_for('auth.login')}}">
+                        <span style="margin-left: 250px;" class="title"><button class="login">Login</button></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{url_for('auth.signup')}}">
+                        <span style="margin-left: -30px;" class="title"><button class="open">Apply</button></span>
+                    </a>
+                </li>
+            </ul>    
+        </nav>
+    </div>
+</section>
+
+
+
+<section class="intro">
+    <div class="intro-text">
+        <button class="b-loan"><strong>Get up to &#8358 5 million loan for your business </strong></button>
+        <h1 id="head1">Quick and Easy <br> Loans for Your<br>Business Needs.
+        </h1>
+        <p>
+            Our loan services offer a hassle-free and streamlined lending  <br>
+            experience, providing you with the funds you need in a timely  <br> 
+            manner to meet your business financial needs. 
+        </p>
+        <a style="color: black;" class="btn-apply" href="signup.html">Apply now &#8599</strong></a>
+    </div>
+
+    <div class="handshake">
+        <img style="border-radius: 5px;" src="{{ url_for('static', filename='images/smiling-girl.jpg') }}" width="600" height="450" alt="handshake">   
+    </div>
+
+    <div class="loan-calc1">
+        <form action="">
+            <label class="label" for="loan amount">
+                LOAN AMOUNT</label><input  class="signup-btn3" type="text" placeholder="NGN"><br>
+
+            <label class="label" for="loan tenor">
+                    LOAN TENOR</label><input style="margin-left: 20px; margin-top: 10px" class="signup-btn3" type="text" placeholder="MONTHS"> <br>
+                    
+            <label class="label" for="interest">
+                    INTEREST</label><input style="margin-left: 38px; margin-top: 10px" class="signup-btn3" type="text" placeholder="%">
+
+            <p style="color: rgba(61, 61, 61, 0.70);">Check your loan eligibility <a href="loaneligibility.html"><strong style="color: #3355FD; text-decoration: underline; ">here</strong></a></p>
+
+            <button style="width: 110px; padding: 4px 10px; border: 1px solid #414141; border-radius: 4px;">Calculate</button>
+            <button style="width: 110px; padding: 6px 10px;margin-left: 20px; background-color:  #3355FD ;color: white; border-radius: 4px; border: none;">Clear</button>
+        </form>
+    </div>
+</section>
+
+<section>
+    <div class="analytics">
+        <div class="analytics-data"><h1 class="data-header">20K</h1>
+            <br>Loans Approved</div>
+        <div class="analytics-data"><h1 class="data-header">&#8358 22B</h1>
+            <br>Disbursed to SMEs</div>
+        <div class="analytics-data"><h1 class="data-header">190K</h1>
+            <br>SMEs Supported</div>
+    </div>
+</section>
+
+<section>
+    <div><h1 class="our-products">Our Products</h1></div>
+
+    <div class="ourproducts">
+        <div style="background-color: #F9FAFB;" class="products">
+            <img class="products-icon" src="{{ url_for('static', filename='images/Frame 105 (3)') }}" alt="piggybank">
+            <p id="products-header">Startup Loans</p>
+            <p>Let's provide capital to your new  <br> business to cover initial costs and launch <br> operations.</p>
+            <button style="border: 2px solid var(--Foundation-Green-G300, #FDDD32);" class="get-loan">Get Loan</button>
+        </div>
+        <div style="background-color: #F9FAFB;" class="products">
+            <img class="products-icon" src="{{ url_for('static', filename='images/Frame 105 (2)') }}" alt="piggybank">
+            <p id="products-header">Equipment Financing</p>
+            <p>Get the funds you need to purchase or <br> lease equipment necessary for business <br> operations.</p>
+            <button style="border: 2px solid var(--Foundation-Green-G300, #FDDD32);" class="get-loan">Get Loan</button>
+        </div>
+        <div style="background-color: #F9FAFB;" class="products">
+            <img class="products-icon" src="{{ url_for('static', filename='images/capital-hub.png') }}" alt="piggybank">
+            <p id="products-header">Bridge Loans</p>
+            <p>Short-term financing to cover gaps in cash  <br> flow or fund immediate needs until longer- <br> term financing is secured.</p>
+            <button style="border: 2px solid var(--Foundation-Green-G300, #FDDD32);" class="get-loan">Get Loan</button>
+        </div>
+    </div>
+
+    <div class="see-more-btn"><a href="productspage.html"><button class="see-more">View More</button></a></div>
+</section>
+    
+<section>
+    <div><h1 class="our-services">Our Amazing Benefits</h1></div>
+
+    <div class="ourservices">
+        <div class="services">
+            <img class="benefits-image" src="{{ url_for('static', filename='images/excited-girl.jpg') }}" alt="">
+        </div>
+        <div class="benefits">
+            <button style="background-color: #336EEB; color: white;" class="benefits-button"> <p style="margin-left: 20px;">01</p>  
+            <p style="margin-left: 50px;">Access up to N10 million</p>  
+            <p style="margin-left: 120px;">&#8599</p>
+            </button><br>
+
+            <button class="benefits-button">
+            <p style="margin-left: 20px;">02</p> 
+            <p style="margin-left: 50px;">Receive loan in 72 hours</p> 
+            <p style="margin-left: 120px;">&#8599</p>
+            </button><br>
+
+            <button class="benefits-button">
+            <p style="margin-left: 20px;">03</p> 
+            <p style="margin-left: 50px;">Competitive Interest Rates</p> 
+            <p style="margin-left: 100px;">&#8599</p>
+            </button><br>
+
+            <button  class="benefits-button">
+            <p style="margin-left: 20px;">04</p> 
+            <p style="margin-left: 50px;">No collateral needed</p> 
+            <p style="margin-left: 155px;">&#8599</p>
+            </button><br>
+
+            <button class="benefits-button">
+            <p style="margin-left: 20px;">05</p> 
+            <p style="margin-left: 50px;">Personalized Customer Support</p> 
+            <p style="margin-left: 50px;">&#8599</p>   
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="abt-us">
+    <div class="abt-text">
+        <h1 id="abt-head">About us
+        </h1>
+        <p>
+            CapitalHub- Your trusted financial partner for SME loans.<br>
+            Quick approvals, competitive rates, and personalized  <br> 
+            solutions to meet your business unique needs. <br>Apply online today! 
+        </p>
+        <a style="color: black;" class="btn-apply" href="aboutpage.html">Learn more</strong></a>
+    </div>
+
+    <div class="handshake">
+        <img style="border-radius: 5px; margin-left: -100px; margin-top: 50px;" src="{{ url_for('static', filename='images/aboutus.jpg') }}" width="600" height="450" alt="handshake">   
+    </div>
+</section>
+
+<section>
+    <div><h1 class="how-it-works">How we work?</h1></div>
+    <div class="works">
+        <div class="vector">
+            <img src="{{ url_for('static', filename='images/Vector.jpg') }}" alt="">
+            <p class="numbers">1</p>
+        </div>
+        <div class="work-writeup">
+            <h1 style="margin-top: 5px;">Application</h1>
+            <p>Click on the Get a loan button and fill the loan application in a  <br> seamless documentation process. The application includes necessary  <br> information, such as revenue, registered business name, and the <br> purpose of the loan.</p>
+        </div>
+    </div>
+
+    <div style="gap: 80px;" class="works">
+        <div style="margin-left: 60px;" class="work-writeup">
+            <h1 style="margin-top: 5px;">Documentation and Verification</h1>
+            <p>Upload required documents, such as business identification proof, <br> revenue statements, bank statements, and collateral details <br> (if applicable). This would go through a verification process with to  <br> confirm eligibility for the loan.</p>
+        </div>
+        <div class="vector">
+            <img style="margin-left: 360px;" src="{{ url_for('static', filename='images/Vector.jpg') }}" alt="">
+            <p class="numbers">2</p>
+        </div>
+    </div>
+
+    <div class="works">
+        <div class="vector">
+            <img src="{{ url_for('static', filename='images/Vector.jpg') }}" alt="">
+            <p class="numbers">3</p>
+        </div>
+        <div class="work-writeup">
+            <h1 style="margin-top: 5px;">Eligibility Requirement</h1>
+            <p>A eligibility assessment will be conducted to evaluate your <br> creditworthiness and ability to repay the loan. This process involves <br>analysing your bank statement, valid means of identification, bank <br>verification number, CAC document, and other factors.</p>
+        </div>
+    </div>
+
+    <div style="gap: 80px;" class="works">
+        <div style="margin-left: 60px;" class="work-writeup">
+            <h1 style="margin-top: 5px;">Loan Approval</h1>
+            <p>After you meet the necessary lending criteria and passes the credit <br> assessment, the loan is approved. You will determines the loan amount,<br> interest rate, repayment term, and any associated fees.</p>
+        </div>
+        <div class="vector">
+            <img style="margin-left: 360px;" src="{{ url_for('static', filename='images/Vector.jpg') }}" alt="">
+            <p class="numbers">4</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div><h1 class="loan-calc">Loan Calculator</h1></div>
+
+    <!--<div class="loan-calculator1">
+        <button>Loan Approval</button>
+    </div>-->
+
+    <div class="loan-calculator"> 
+        <div class="calc-writeup">
+            <h1 style="font-size: 46px;">Calculate your loan <br> repayment in 10 seconds</h1>
+            <p style="color: rgba(61, 61, 61, 0.57);">Use CapitalHub to estimate how <br> much you need to pay monthly, your interest <br> and total payment.</p>
+            <a href="loancalculator.html"><button style="height: 40px; width: 100px; font-weight: 700; background-color: #FDDD32;border-radius: 5px; border: none;">Calculate</button></a>
+        </div>
+
+        <div class="calc-image">
+            <img class="c-image" src="{{ url_for('static', filename='images/fashion.jpg') }}" width="500" height="450" alt="">
+        </div>
+    </div>
+
+    <!--<div class="loan-calculator2">
+        <button>Loan Approval</button>
+    </div>-->
+</section>
+
+<section>
+    <div class="testimonial">
+        <div class="testi-monial"><h1 class="testimonials">What our Customers are Saying</h1></div>
+
+        <div class="ourtestimonials">
+            <div class="testy">
+                <div class="testimony"><img class="testimony-image" src="{{ url_for('static', filename='images/lady1.jpg') }}" alt="piggybank">
+                <p class="reviewers">Mercy Ahmed</p>
+                <img style="height: 12px; margin-left: 60px; margin-bottom: 1px;" src="{{ url_for('static', filename='images/Frame 1107.jpg') }}" alt="">
+            </div>
+
+                <p class="testimony-writeup">With competitive interest rates and  flexible<br>  repayment terms, we were able to invest in<br>  new equipment and grow our operations<br>  without any hassle..</p>
+                <p>15th May 2024</p>
+
+        
+            </div>
+            <div class="testy">
+                <div class="testimony"><img class="testimony-image"src="{{ url_for('static', filename='images/man.jpg') }}.jpg" alt="piggybank">
+                    <p class="reviewers">Emeka Chike</p>
+                    <img style="height: 12px; margin-left: 60px; margin-bottom: 1px;" src="{{ url_for('static', filename='images/Frame 1107.jpg') }}" alt="">
+                </div>
+                <p class="testimony-writeup">With competitive interest rates and  flexible<br>  repayment terms, we were able to invest in<br>  new equipment and grow our operations<br>  without any hassle..</p>
+                <p>15th May 2024</p>
+        
+            </div>
+            <div class="testy">
+                <div class="testimony"><img class="testimony-image"src="{{ url_for('static', filename='images/lady2.jpg') }}" alt="piggybank">
+                    <p class="reviewers">Yinka Davies</p>
+                    <img style="height: 12px; margin-left: 60px; margin-bottom: 1px;" src="{{ url_for('static', filename='images/Frame 1107.jpg') }}" alt="">
+                </div>
+                <p class="testimony-writeup">With competitive interest rates and  flexible<br>  repayment terms, we were able to invest in<br>  new equipment and grow our operations<br>  without any hassle..</p>
+                <p>15th May 2024</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h1 class="faq">Frequently Asked Questions</h1>
+    </div>
+<div class="frequent">
+    <div class="quiz">
+        <p class="faq-quiz"><strong>Are there any specific collateral requirements for SME business loans?</strong> </p>
+        <div class="answer">
+            <p style="margin-left: 25px;">Get access to funds to finance your business
+                within 72hours. Quick, secured and low interest rate  
+            </p>
+        </div>
+    </div>
+    <div class="quiz">
+        <p class="faq-quiz"><strong>Are there any specific collateral requirements for SME business loans?</strong> </p>
+        <div class="answer">
+            <p style="margin-left: 25px;">
+                 Get access to funds to finance your business
+                within 72hours. Quick, secured and low interest rate
+            </p>
+        </div>
+    </div>
+    <div class="quiz">
+        <p class="faq-quiz"><strong>Are there any specific collateral requirements for SME business loans?</strong> </p>
+        <div class="answer">
+            <p style="margin-left: 25px;"> Get access to funds to finance your business
+                within 72hours. Quick, secured and low interest rate
+            </p>
+        </div>
+    </div>
+    <div class="quiz">
+        <p class="faq-quiz"><strong>Are there any specific collateral requirements for SME business loans?</strong> </p>
+        <div class="answer">
+            <p style="margin-left: 25px;"> Get access to funds to finance your business
+                within 72hours. Quick, secured and low interest rate
+            </p>
+        </div>
+    </div>
+    <div class="quiz">
+        <p class="faq-quiz"><strong>Are there any specific collateral requirements for SME business loans?</strong> </p>
+        <div class="answer">
+            <p style="margin-left: 25px;">
+             Get access to funds to finance your business
+                within 72hours. Quick, secured and low interest rate
+            </p>
+        </div>
+    </div>
+</div>
+ 
+</section>
+
+<div style="color: white;" class="footer-container">
+    <div class="types">
+        <div><h1>CapitalHub</h1>
+            <p>Our mission is to empower <br> businesses by providing them <br> with the financial resources they <br> need to achieve their goals.</p>
+        </div>
+        <div>
+            <h1>Products</h1>
+            <p>Startup Loan</p>
+            <p>Bridge Finance</p>
+            <p>Equipment Financing</p>
+            <p>Micro Loans</p>
+        </div>
+        <div>
+            <h1>Company</h1>
+            <a style="text-decoration: none; color: white;" href="aboutpage.html"><p>About</p></a>
+            <p>FAQ</p>
+            <a style="text-decoration: none; color: white;" href="resources.html"><p>Resources</p></a>
+            <a style="text-decoration: none; color: white;" href="loanapplication.html"><p>Apply for Loan</p></a> 
+        </div>
+        <div>
+            <p style="margin-top: 30px;">28 Mobos Shola, Lekki Phase 1, <br> Lagos, Nigeria</p>
+            <p style="text-align: end;">support@capitalhub.com</p>
+            <p style="text-align: end;">+234 810 181181</p>
+        </div>
+    </div>
+
+    <div class="socials">
+        <img class="social-media" src="{{ url_for('static', filename='images/Speech_bubble (3).jpg') }}" alt="">
+        <img class="social-media" src="{{ url_for('static', filename='images/Speech_bubble (4).jpg') }}" alt="">
+        <img class="social-media" src="{{ url_for('static', filename='images/flowbite_linkedin-solid.jpg')}}" alt="">
+        <img class="social-media" src="{{ url_for('static', filename='images/Speech_bubble (5).jpg')}}" alt="">
+    </div>
+
+    <div class="copyright">
+        <div><p>@Finzo. All Rights is Reserved.</p></div>
+        <div class="terms">
+            <a style="text-decoration: none; color: white;" href="privacypolicy.html"><p>Terms</p></a>
+            <p>Privacy</p>
+            <p>Security</p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

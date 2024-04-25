@@ -1,0 +1,12 @@
+.venv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+node_modules
+
+flask_session/
+

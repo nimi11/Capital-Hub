@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Hub</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
+    
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: var(--Foundation-Blue-B300, #3355FD);">
+    <div class="contain-success"  style="background-color:white;" >
+        <div class="success-image"><img style="margin-left: -309px; margin-top: -50px;" src="{{ url_for('static', filename='/images/sucess.png')}}" width="600" height="400"
+        alt=""></div>
+
+        <div class="success ">
+            <h2 style="padding-left: 30px;">Successful!</h2>
+            <p style="font-size: 12px;" class="parag">
+                Your application has been successfully received. We would verify <br> your application documentation and
+                provide details
+                of your status.<br> You can also view status for updates.
+            </p>
+           <a href="/dashboard">
+                <button class="see-progress">Go to Dashboard</button>
+           </a>
+           
+
+            <a href="/">
+            <button class="back-home">Back to Home</button></a>
+        </div>
+
+    </div>
+</body>
+
+</html>

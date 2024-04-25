@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="homepage.css">
+
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div style="background-color: #3355FD; height: 900px; margin: none; padding: 40px;">
+    <div style="background-color: white; width: 900px; margin-left: 190px; margin-top: 30px; height: 770px; border-radius: 5px;">
+      <div style="margin-left: -40px;" class="logo">
+        <a href="#"><img style="height: 30px;" class="logo-img" src="{{ url_for('static', filename='images/capital hub.png')}}" alt="Logo">
+        </a>
+      </div>
+
+      <div style="display: flex;">
+        <div style="margin-left: 60px; margin-top: -30px;">
+          <p><h1>Loan Calculator</h1></p>
+          <p>Plan your borrowings and repayment. You can check <br> your total interest and monthly repayment for your loan <br> amount and duration with our loan calculator.</p>
+
+          <div style="border: 1px solid var(--Foundation-Grey-G100, #ADADAA); width: 400px; height: 390px; border-radius: 8px; padding: 20px; box-shadow: 8px #ADADAA; margin-top: 70px;">
+            <label style="font-weight: 700;" for="">Loan Product</label><br>
+            <input style="width: 350px; border: 1px solid rgba(0, 98, 228, 0.30); padding: 8px; border-radius: 5px; margin-top: 10px; color: rgba(0, 0, 0, 0.30); font-size: 12px; margin-bottom: 10px;" type="text" placeholder="Select loan type"> <svg style="margin-left: -20px; " xmlns="http://www.w3.org/2000/svg" width="11" height="5" viewBox="0 0 11 7" fill="none">
+              <path d="M4.91888 6.76113L0.242419 2.15319C-0.0808065 1.8347 -0.0808065 1.3197 0.242419 1.0046L1.01954 0.238867C1.34276 -0.0796225 1.86543 -0.0796225 2.18521 0.238867L5.5 3.50508L8.81479 0.238867C9.13801 -0.0796225 9.66068 -0.0796225 9.98046 0.238867L10.7576 1.0046C11.0808 1.32309 11.0808 1.83809 10.7576 2.15319L6.08112 6.76113C5.76477 7.07962 5.24211 7.07962 4.91888 6.76113Z" fill="black" fill-opacity="0.3"/>
+            </svg><br>
+
+            <label style="font-weight: 700;" for="">How much do you want to borrow?</label><br>
+            <input style="width: 350px; border: 1px solid rgba(0, 98, 228, 0.30); padding: 8px; border-radius: 5px; margin-top: 10px; color: rgba(0, 0, 0, 0.30); font-size: 12px; margin-bottom: 10px;" type="text" placeholder="Enter amount"><br>
+
+            <label style="font-weight: 700;" for="">How long do you want to pay back?</label><br>
+            <input style="width: 350px; border: 1px solid rgba(0, 98, 228, 0.30); padding: 8px; border-radius: 5px; margin-top: 10px; color: rgba(0, 0, 0, 0.30); font-size: 12px; margin-bottom: 10px;" type="text" placeholder="Select duration"><svg style="margin-left: -20px;" xmlns="http://www.w3.org/2000/svg" width="11" height="5" viewBox="0 0 11 7" fill="none">
+              <path d="M4.91888 6.76113L0.242419 2.15319C-0.0808065 1.8347 -0.0808065 1.3197 0.242419 1.0046L1.01954 0.238867C1.34276 -0.0796225 1.86543 -0.0796225 2.18521 0.238867L5.5 3.50508L8.81479 0.238867C9.13801 -0.0796225 9.66068 -0.0796225 9.98046 0.238867L10.7576 1.0046C11.0808 1.32309 11.0808 1.83809 10.7576 2.15319L6.08112 6.76113C5.76477 7.07962 5.24211 7.07962 4.91888 6.76113Z" fill="black" fill-opacity="0.3"/>
+            </svg> <br>
+
+            <label style="font-weight: 700;" for="">Interest</label><br>
+            <input style="width: 350px; border: 1px solid rgba(0, 98, 228, 0.30); padding: 8px; border-radius: 5px; margin-top: 10px; color: rgba(0, 0, 0, 0.30); font-size: 12px; margin-bottom: 40px;" type="text" placeholder="Select interest"><svg style="margin-left: -20px;" xmlns="http://www.w3.org/2000/svg" width="11" height="5" viewBox="0 0 11 7" fill="none">
+              <path d="M4.91888 6.76113L0.242419 2.15319C-0.0808065 1.8347 -0.0808065 1.3197 0.242419 1.0046L1.01954 0.238867C1.34276 -0.0796225 1.86543 -0.0796225 2.18521 0.238867L5.5 3.50508L8.81479 0.238867C9.13801 -0.0796225 9.66068 -0.0796225 9.98046 0.238867L10.7576 1.0046C11.0808 1.32309 11.0808 1.83809 10.7576 2.15319L6.08112 6.76113C5.76477 7.07962 5.24211 7.07962 4.91888 6.76113Z" fill="black" fill-opacity="0.3"/>
+            </svg> <br>
+
+            <button style="width: 150px; background-color: #0062E4; border-radius: 6px; color: white; padding: 10px 30px; border: none;">Calculate</button>
+            <button style="width: 150px; margin-left: 80px; border: 1px solid #0062E4; background-color: white; padding: 10px 0px; border-radius: 6px;">Clear</button>
+          </div>
+        </div>
+
+        <div style="width: 200px; margin-left: 40px;">
+          <div style="width: 100px;"><img style="width: 350px;" src="{{ url_for('static', filename='images/Star 4.jpg')}}" alt=""></div>
+
+          <div style="border: 1px solid var(--Foundation-Grey-G100, #ADADAA); width: 250px; font-size: 12px; margin-top: 150px; text-align: center; border-radius: 6px; margin-left: 40px; font-weight: 500;">
+            <div style="border-bottom: 1px solid #ADADAA;"><p style="text-align: center;">Results</p></div>
+
+            <div style="display: flex; border-bottom: 1px solid #ADADAA;">
+              <div style="text-align: center; border-right: 1px solid #ADADAA; padding: 5px;">
+                <p>Principal Amount</p>
+                <p>Payment Per Period</p>
+                <p>Total Interest Payable</p>
+                <p>Total Amount Payable</p>
+              </div>
+
+              <div style="text-align: center; padding: 5px 20px;">
+                <p>₦200,000.00</p>
+                <p>₦27,222.22</p>
+                <p>₦45,000.00</p>
+                <p>₦245,000.00</p>
+              </div>
+            </div>
+
+            <div><button onclick="on()" style="color: #0062E4; border: none; background-color: white; padding: 10px; cursor: pointer;" >View Details</button></div>
+          </div>
+        </div>
+      </div>    
+  </div>
+</div>
+
+<div id="calc-overlay">
+  <div id="loan-overlay">
+    <div style="font-size: 16px; font-weight: 700;"><button onclick="off()" style="border: none; background-color: white; font-weight: 700; margin-left: 570px; margin-top: 40px; cursor: pointer;">Close</button></div>
+    <div style="width: 600px; border: 1px solid rgba(0, 0, 0, 0.38); margin-top: 10px; margin-left: 20px; border-radius: 5px; margin-bottom: 30px;">
+      <div style="display: flex; border-bottom: 1px solid black; gap: 850px; align-items: center;">
+        <p style="margin-left: 10px; font-size: 14px; font-weight: 700;">Repayment Summary</p>
+        
+      </div>
+
+      <div style="display: flex; gap: 120px; border-bottom: 1px solid black; font-weight: 700;font-size: 10px;">
+        <p style="margin-left: 10px;">Maturity Date</p>
+        <p>Payment</p>
+        <p>Interest</p>
+        <p>Balance</p>
+      </div>
+
+      <div style="display: flex; gap: 100px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 10px; align-items: center; height: 30px;">
+        <p style="margin-left: 10px;">Sat, Aug 31, 2024</p>
+        <p style="margin-left: 5px;">₦27,222.22</p>
+        <p style="margin-left: 8px;">₦5,000.00</p>
+        <p style="margin-left: -1px;">₦217,777.78</p>
+      </div>
+
+      <div style="display: flex; gap: 100px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 10px; align-items: center; height: 30px;">
+        <p style="margin-left: 10px;">Mon, Jun 30, 2024</p>
+        <p style="margin-left: -3px;">₦27,222.22</p>
+        <p style="margin-left: 8px;">₦5,000.00</p>
+        <p style="margin-left: -1px;">₦217,771.78</p>
+      </div>
+
+      <div style="display: flex; gap: 100px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 10px; align-items: center; height: 30px;">
+        <p style="margin-left: 10px;">Sun, May 31, 2024</p>
+        <p style="margin-left: 1px;">₦27,222.22</p>
+        <p style="margin-left: 8px;">₦5,000.00</p>
+        <p style="margin-left: -1px;">₦217,777.78</p>
+      </div>
+
+      <div style="display: flex; gap: 100px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 10px; align-items: center; height: 30px;">
+        <p style="margin-left: 10px;">Sat, Aug 31, 2024</p>
+        <p style="margin-left: 5px;">₦27,222.22</p>
+        <p style="margin-left: 8px;">₦5,000.00</p>
+        <p style="margin-left: -1px;">₦217,777.78</p>
+      </div>
+
+      <div style="display: flex; gap: 100px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 10px; align-items: center; height: 30px;">
+        <p style="margin-left: 10px;">Sat, Aug 31, 2024</p>
+        <p style="margin-left: 5px;">₦27,222.22</p>
+        <p style="margin-left: 8px;">₦5,000.00</p>
+        <p style="margin-left: -1px;">₦217,777.78</p>
+      </div>
+
+      <div style="display: flex; gap: 100px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 10px; align-items: center; height: 30px;">
+        <p style="margin-left: 10px;">Sat, Aug 31, 2024</p>
+        <p style="margin-left: 5px;">₦27,222.22</p>
+        <p style="margin-left: 8px;">₦5,000.00</p>
+        <p style="margin-left: -1px;">₦217,777.78</p>
+      </div>
+
+      <div style="display: flex; gap: 100px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 10px; align-items: center; height: 30px;">
+        <p style="margin-left: 10px;">Sat, Aug 31, 2024</p>
+        <p style="margin-left: 5px;">₦27,222.22</p>
+        <p style="margin-left: 8px;">₦5,000.00</p>
+        <p style="margin-left: -1px;">₦217,777.78</p>
+      </div>
+
+      <div style="display: flex; gap: 100px; border-bottom: 1px solid black; color: rgba(10, 11, 17, 0.50); font-size: 10px; align-items: center; height: 30px;">
+        <p style="margin-left: 10px;">Sat, Aug 31, 2024</p>
+        <p style="margin-left: 5px;">₦27,222.22</p>
+        <p style="margin-left: 8px;">₦5,000.00</p>
+        <p style="margin-left: -1px;">₦217,777.78</p>
+      </div>
+
+      <div style="display: flex; gap: 100px; color: rgba(10, 11, 17, 0.50); font-size: 10px; align-items: center; height: 30px;">
+        <p style="margin-left: 10px;">Sat, Aug 31, 2024</p>
+        <p style="margin-left: 5px;">₦27,222.22</p>
+        <p style="margin-left: 8px;">₦5,000.00</p>
+        <p style="margin-left: -1px;">₦217,777.78</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function on() {
+    document.getElementById("calc-overlay").style.display = "block";
+  }
+
+  function off() {
+    document.getElementById("calc-overlay").style.display = "none";
+  }
+</script>
+</body>
+</html>
