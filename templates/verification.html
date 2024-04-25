@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capital Hub</title>
-  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
 
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
   <div class="container2">
 
     <div class="discuss2">
-      <img style="margin-top: 10px;" src="images/african (1).jpg" width="600" height="900" alt="discussion">
+      <img style="margin-top: 10px;" src="{{ url_for('static', filename='images/african (1).jpg')}}" width="600" height="900" alt="discussion">
     </div>
 
     <div class="acc-info2">
@@ -20,6 +20,8 @@
             <h1>Signing up to Capital Hub</h1>
             <p style=" line-height: 20px;" >Provide all the necessary details to move to the next stage</p>
         </div>
+        <form action="{{ url_for('verification.verification') }}" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="email" value="{{ email }}">
         <div class="information2">
             <p style="color: #F30066; font-size: 12px; font-weight: 400; margin-bottom: 0px;">Fields marked with * are mandatory</p>
            
@@ -27,7 +29,7 @@
             <div class="form-group2">
               <div style="display: flex; flex-direction: column;">
                 <p class="headers3">Passport <strong style="color: #F30066;">*</strong></p>
-                <input  style="color:rgba(0, 98, 228, 0.55);" class="signup-info3" type="text" name=""
+                <input  style="color:rgba(0, 98, 228, 0.55);" class="signup-info3" type="file" name="passport"
                   placeholder="Browse file">
         
                   <!-- <p class="upload" style="margin-left: 380px;">Drag and drop a file</p> -->
@@ -35,7 +37,7 @@
             
               <div style="display: flex; flex-direction: column;">
                 <p class="headers2">Valid Identification <strong style="color: #F30066;">*</strong></p>
-                <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name=""
+                <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="file" name="identification"
                   placeholder="Browse file">
               </div>
             </div>
@@ -43,13 +45,13 @@
           <div class="form-group2">
             <div style="display: flex; flex-direction: column;">
               <p class="headers3">Tax Statement <strong style="color: #F30066;">*</strong></p>
-              <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name=""
+              <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="file" name="tax_statement"
                 placeholder="Browse file">
             </div>
           
             <div style="display: flex; flex-direction: column;">
               <p class="headers2">Bank Statement <strong style="color: #F30066;">*</strong></p>
-              <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name=""
+              <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="file" name="bank_statement"
                 placeholder="Browse file">
             </div>
           </div>
@@ -57,20 +59,20 @@
             <div class="form-group2">
               <div style="display: flex; flex-direction: column;">
                 <p class="headers3">Reference <strong style="color: #F30066;">*</strong></p>
-                <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name=""
+                <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name="reference"
                   placeholder="Name,middle name, last name">
               </div>
             
               <div style="display: flex; flex-direction: column;">
-                <p class="headers2">Relatinship<strong style="color: #F30066;">*</strong></p>
-                <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name=""
+                <p class="headers2">Relationship<strong style="color: #F30066;">*</strong></p>
+                <input style="color: rgba(0, 0, 0, 0.30);" class="signup-info3" type="text" name="relationship"
                   placeholder="Enter your relationship">
               </div>
             </div>
 
           
             <div style="margin-top: 30px;"><p class="headers2">Reference Contact <strong style="color: #F30066;">*</strong></p>
-            <input style="width: 250px;" class="signup-info2" type="text" placeholder="Enter phone no" name=""></div>
+            <input style="width: 250px;" class="signup-info2" type="text" placeholder="Enter phone no" name="reference_contact"></div>
 
             
             <div  style="margin-top: 50px;">
@@ -85,9 +87,9 @@
             <a href="signup.html">
             <button class="signup-btn-2">Back</button></a>  
 
-            
             <button type="submit" class="signup-btn2-2">Submit</button>
         </div>
+      </form>
     </div>
      
   </div>

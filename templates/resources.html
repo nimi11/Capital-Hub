@@ -12,7 +12,7 @@
 <body>
     <section class="navigation">
         <div class="logo">
-                <a href="#"><img style="width: 190px;" class="logo-img" src="images/capital hub.png" alt="Logo">
+                <a href="#"><img style="width: 190px;" class="logo-img" src="{{ url_for('static', filename='images/capital hub.png')}}" alt="Logo">
                 </a>
         </div>
     
@@ -62,7 +62,7 @@
             </div>
         
             <div style="background-color: #F6C71E; margin-bottom: 0px; width: 710px;">
-                <img style="width: 610px; height: 480px; margin-top: 110px; " src="images/resources.jpg" alt="">
+                <img style="width: 610px; height: 480px; margin-top: 110px; " src="{{ url_for('static', filename='images/resources.jpg')}}" alt="">
             </div>
         </div>
     </section>
@@ -73,7 +73,7 @@
        <div style="background-color: #F6C71E; border-radius: 20px; display: flex; gap: 100px; width: 1300px; margin-left: 25px; margin-bottom: 150px; padding-right: 70px; ">
         <!-- <div><h2>Latest</h2></div> -->
         <div style="display: flex; margin-left: 55px; padding:40px"> 
-            <img src="./images/finwise10.jpg" alt="">
+            <img src="{{ url_for('static', filename='/images/finwise10.jpg')}}" alt="">
             <div style="margin:40px; ;">
                 <p style="color:  rgba(10, 11, 17, 0.80); font-size: 11px;">APR 4, 2024</p>
                 <p style="color:  rgba(10, 11, 17, 0.80);">Understanding  Business Loans:A <br> Beginner's Guide <a style="text-decoration: none;" href="resources1.html"></p>
@@ -82,7 +82,7 @@
             
         </div>
         <div style="display: flex; padding: 50px ;">
-            <img src="./images/finwise10 (1).jpg" alt="">
+            <img src="{{ url_for('static', filename='/images/finwise10 (1).jpg')}}" alt="">
             <div style="margin:40px; ;">
                 <p style="color:  rgba(10, 11, 17, 0.80); font-size: 11px;">APR 4, 2024</p>
                 <p style="color:  rgba(10, 11, 17, 0.80);">Types of Financing <br> Options for Small Businesses </p>
@@ -96,7 +96,7 @@
         <div
             style="display: grid; grid-template-columns: 1fr 1fr 1fr; justify-content: center;  gap: 10px; margin-bottom: 200px; background-color: #F5F8FF;  padding: 40px;">
             <div >
-                <img  style ="margin-left: 20px; height:320px;width:430px; border-radius: 20px;"src="./images/finwise10.jpg" alt="">
+                <img  style ="margin-left: 20px; height:320px;width:430px; border-radius: 20px;"src="{{ url_for('static', filename='/images/finwise10.jpg')}}" alt="">
                 <div  style="margin-left: 20px;">
                     <p style="font-weight: 400; color: #252525;">APR 4, 2024</p>
                     <p style="font-weight: 500;"> Understanding Business Loans: A <br> Beginner's Guide</p>
@@ -106,7 +106,7 @@
 
     
             <div>
-                <img style="height:320px;width:430px; border-radius: 20px;" src="./images/finwise10 (1).jpg" alt="">
+                <img style="height:320px;width:430px; border-radius: 20px;" src="{{ url_for('static', filename='/images/finwise10 (1).jpg')}}" alt="">
                 <div >
                     <p style="font-weight: 400; color: #252525;">APR 4, 2024</p>
                     <p style="font-weight: 500;"> Types of Financing Options for <br> Small Businesses</p>
@@ -115,7 +115,7 @@
             </div>
     
             <div>
-                <img style="height:320px;width:430px; border-radius: 20px;" src="./images/finwise5 2.jpg" alt="">
+                <img style="height:320px;width:430px; border-radius: 20px;" src="{{ url_for('static', filename='/images/finwise5 2.jpg')}}" alt="">
                 <div >
                     <p style="font-weight: 400; color: #252525;">APR 4, 2024</p>
                     <p style="font-weight: 500;"> Creating a Solid Business Budget: <br> Step-by-Step Guide</p>
@@ -124,7 +124,7 @@
             </div>
     
             <div>
-                <img style="margin-left: 20px; height:320px;width:430px; border-radius: 20px;" src="./images/finwise5 2 (1).jpg" alt="">
+                <img style="margin-left: 20px; height:320px;width:430px; border-radius: 20px;" src="{{ url_for('static', filename='/images/finwise5 2 (1).jpg')}}" alt="">
                 <div style="margin-left: 20px;" >
                     <p style="font-weight: 400; color: #252525;">APR 4, 2024</p>
                     <p style="font-weight: 500;"> As a business owner, how do <br> Improve My Credit Score</p>
@@ -133,7 +133,7 @@
             </div>
     
             <div>
-                <img style="height:320px;width:430px; border-radius: 20px;" src="./images/finwise5 2 (2).jpg" alt="">
+                <img style="height:320px;width:430px; border-radius: 20px;" src="{{ url_for('static', filename='/images/finwise5 2 (2).jpg')}}" alt="">
                 <div >
                     <p style="font-weight: 400; color: #252525;">APR 4, 2024</p>
                     <p style="font-weight: 500;">Managing Cash Flow: Tips for <br> Small Business Owners</p>
@@ -142,7 +142,7 @@
             </div>
 
             <div>
-            <img style="height:320px;width:430px; border-radius: 20px;" src="./images/finwise5 2 (3).jpg" alt="">
+            <img style="height:320px;width:430px; border-radius: 20px;" src="{{ url_for('static', filename='/images/finwise5 2 (3).jpg')}}" alt="">
             <div >
                 <p style="font-weight: 400; color: #252525;">APR 4, 2024</p>
                 <p style="font-weight: 500;">The Dos and Don'ts of Borrowing <br> for Your Business in 2024</p>
@@ -156,7 +156,7 @@
 
     <section>
         <div style="display: flex; margin-bottom: 120px; padding-bottom: 50px; margin-top: -100px; ">
-            <img style="height: 618px; width: 632px; margin-left: 100px;" src="./images/lady.jpg" alt="">
+            <img style="height: 618px; width: 632px; margin-left: 100px;" src="{{ url_for('static', filename='/images/lady.jpg')}}" alt="">
             <div style="margin-left:80px; margin-top: 150px">
                 <h1 style="font-weight: 700; font-size: 38px;"><strong> Let’s help you achieve <br> your business goal <br> today.</strong></h1>
                 <a style="text-decoration: none;" href="customersupport.html"><button style="background-color:#FDDD32; padding: 12px 24px; border-radius: 10px; border: none; align-items: center; margin-top: -10px; display: flex; cursor: pointer;">Send us a message &ensp;
@@ -198,10 +198,10 @@
             </div>
         
             <div class="socials">
-                <img class="social-media" src="images/Speech_bubble (3).jpg" alt="">
-                <img class="social-media" src="images/Speech_bubble (4).jpg" alt="">
-                <img class="social-media" src="images/flowbite_linkedin-solid.jpg" alt="">
-                <img class="social-media" src="images/Speech_bubble (5).jpg" alt="">
+                <img class="social-media" src="{{ url_for('static', filename='images/Speech_bubble (3).jpg')}}" alt="">
+                <img class="social-media" src="{{ url_for('static', filename='images/Speech_bubble (4).jpg')}}" alt="">
+                <img class="social-media" src="{{ url_for('static', filename='images/flowbite_linkedin-solid.jpg')}}" alt="">
+                <img class="social-media" src="{{ url_for('static', filename='images/Speech_bubble (5).jpg')}}" alt="">
             </div>
         
             <div class="copyright">
