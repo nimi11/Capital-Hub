@@ -1543,11 +1543,11 @@ input:checked + .slider:before {
 } */
 
 .flash-message{
-  color: #243BB1 ;
-  font-size: 15px;
+  color: red;
+  font-size: 35px;
   font-weight: bold;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 50px;
   list-style: none;
   
   

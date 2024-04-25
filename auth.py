@@ -31,13 +31,13 @@ def signup():
 
         # Check if passwords match
         if password != password2:
-            flash('Passwords do not match', 'error')
+            flash('Passwords do not match', 'signup')
             return redirect(url_for('auth.signup'))
         
          # Check if the email already exists in the database
         existing_user = User.query.filter_by(email=email).first()
         if existing_user:
-            flash('Email address already exists. Please use a different email.', 'error')
+            flash('Email address already exists. Please use a different email.', 'signup')
             return redirect(url_for('auth.signup'))
 
         # Hash the password before storing it in the database
@@ -88,10 +88,10 @@ def login():
                 session['user_id'] = user.id
                 return redirect(url_for('auth.dashboard'))
             else:
-                flash('Incorrect email or password', 'error')
+                flash('Incorrect email or password', 'login')
                 return redirect(url_for('auth.login'))
         else:
-            flash('Incorrect email or password', 'error')
+            flash('Incorrect email or password', 'login')
             return redirect(url_for('auth.login'))
 
     return render_template('login.html')

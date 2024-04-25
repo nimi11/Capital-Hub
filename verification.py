@@ -21,7 +21,7 @@ def verification():
 
         # Ensure user is logged in
         if not user_id:
-            flash('Please log in to access this page.', 'error')
+            flash('Please log in to access this page.', 'very')
             return redirect(url_for('auth.login'))
 
         # Get form data
@@ -36,12 +36,12 @@ def verification():
 
         # Check if all required files are provided
         if not (passport and valid_identification and tax_statement and bank_statement):
-            flash('Please provide all required documents', 'error')
+            flash('Please provide all required documents', 'very')
             return redirect(request.url)
 
         # Check if the email is provided
         if not email:
-            flash('User email not provided', 'error')
+            flash('User email not provided', 'very')
             return redirect(url_for('auth.signup'))
 
         # Get user's directory based on email
@@ -74,7 +74,7 @@ def verification():
         db.session.add(verification_doc)
         db.session.commit()
 
-        flash('Verification documents uploaded successfully', 'success')
+        flash('Verification documents uploaded successfully', 'very')
         return redirect(url_for('verification.loan'))
 
     return render_template('verification.html' , email=email)
@@ -86,11 +86,12 @@ def loan():
 
     # Ensure user is logged in
     if not user_id:
-        flash('Please log in to access this page.', 'error')
+        flash('Please log in to access this page.', 'loan')
         return redirect(url_for('auth.login'))
 
     if request.method == 'POST':
         # Get form data
+        user_id = session.get('user_id')
         loan_type = request.form['loan_type']
         loan_amount = request.form['loan_amount']
         tenure = request.form['tenure']
@@ -104,16 +105,16 @@ def loan():
 
         # Validate form data
         if len(account_no) != 10:
-            flash('Account number must be 10 digits long.', 'error')
+            flash('Account number must be 10 digits long.', 'loan')
             return redirect(request.url)
         if len(driver_license) > 8:
-            flash('Driver license number must not exceed 8 characters.', 'error')
+            flash('Driver license number must not exceed 8 characters.', 'loan')
             return redirect(request.url)
         if int(tenure) > 24 or int(tenure) < -1:
-            flash('Invalid tenure value. Tenure must be between 1 and 24 months.', 'error')
+            flash('Invalid tenure value. Tenure must be between 1 and 24 months.', 'loan')
             return redirect(request.url)
         if len(bvn) != 11:
-            flash('BVN must be 11 digits long.', 'error')
+            flash('BVN must be 11 digits long.', 'loan')
             return redirect(request.url)
 
         # If validation passes, save loan details to database

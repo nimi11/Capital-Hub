@@ -67,6 +67,18 @@
             {% endfor %}
         </ul>
         {% endif %} {% endwith %}
+
+        <script>
+            // Function to automatically hide flash messages after 3 seconds
+            document.addEventListener("DOMContentLoaded", function () {
+                var flashMessages = document.querySelectorAll(".flash-message");
+                flashMessages.forEach(function (message) {
+                    setTimeout(function () {
+                        message.style.display = "none";
+                    }, 2000);
+                });
+            });
+        </script>
     <div class="intro-text">
         <button class="b-loan"><strong>Get up to &#8358 5 million loan for your business </strong></button>
         <h1 id="head1">Quick and Easy <br> Loans for Your<br>Business Needs.
@@ -399,6 +411,10 @@
         </div>
     </div>
 </div>
-<script src="script.js"></script>
+<script src="script.js">
+
+</script>
+
+
 </body>
 </html>
