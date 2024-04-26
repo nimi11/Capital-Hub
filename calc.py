@@ -13,8 +13,14 @@ def calculator():
     total_interest_payable = 0
     total_amount_payable = 0
     if request.method == 'POST':
-        amount = float(request.form.get('amount'))
-        tenure = int(request.form.get('tenure'))
+        amount_str = request.form.get('amount')
+        tenure_str = request.form.get('tenure')
+
+        try:
+            amount = float(amount_str) if amount_str else 0
+            tenure = int(tenure_str) if tenure_str else 0
+        except ValueError:
+            return redirect(url_for('calc.calculator'))
         
         print("Amount:", amount)
         print("Tenure:", tenure)
@@ -25,13 +31,14 @@ def calculator():
                 return redirect(url_for('index'))
         
         principal_amount = "{:,.2f}".format(amount)
- # Perform loan calculations
-        monthly_interest_rate = get_monthly_interest_rate(tenure)
-        payment_per_period = calculate_payment_per_period(amount, monthly_interest_rate, tenure)
-        total_interest_payable = calculate_total_interest_payable(amount, tenure)
-        total_amount_payable = "{:,.2f}".format(round(amount + total_interest_payable, 2))
-        payment_per_period = "{:,.2f}".format(round(payment_per_period, 2))
-        total_interest_payable = "{:,.2f}".format(round(total_interest_payable, 2))
+        if amount > 0 and tenure > 0:
+            # Perform loan calculations only if amount and tenure are greater than zero
+            monthly_interest_rate = get_monthly_interest_rate(tenure)
+            payment_per_period = calculate_payment_per_period(amount, monthly_interest_rate, tenure)
+            total_interest_payable = calculate_total_interest_payable(amount, tenure)
+            total_amount_payable = "{:,.2f}".format(round(amount + total_interest_payable, 2))
+            payment_per_period = "{:,.2f}".format(round(payment_per_period, 2))
+            total_interest_payable = "{:,.2f}".format(round(total_interest_payable, 2))
 
         return render_template("loancalculator.html", 
                                 principal_amount=principal_amount,
@@ -43,7 +50,6 @@ def calculator():
                                 payment_per_period=payment_per_period,
                                 total_interest_payable=total_interest_payable,
                                 total_amount_payable=total_amount_payable)
-
 def get_monthly_interest_rate(tenure):
     if 2 <= tenure <= 6:
         return 0.02 / 12
